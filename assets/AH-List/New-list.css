@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+#post-wrapper {margin:auto;float:none;}
+#outer-wrapper {width: 1000px;}
+#sidebar-wrapper {visibility: hidden; display: none;}
 #table tr {
     float: left;
 }
