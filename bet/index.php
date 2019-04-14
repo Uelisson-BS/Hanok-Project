@@ -1,4 +1,4 @@
 <?php
-  header( 'Location: http://www.redirect-location.com' );
+  header( 'Location: movies.json' );
   exit();
 ?>
