@@ -1,4 +1,4 @@
 <?php
-  header( 'Location: movies.json/' );
+  header( 'Location: movies/' );
   exit();
 ?>
