@@ -1,1 +1,41 @@
-{"results":{"id":1,"title":"Jurassic World: Fallen Kingdom","genres":[1,2,15],"description":"Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.","release_date":"2018-06-06","image":"c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg","director":"Juan Antonio Bayona","cast":[{"character":"Owen Grady","name":"Chris Pratt"},{"character":"Claire Dearing","name":"Bryce Dallas Howard"},{"character":"Maisie Lockwood","name":"Isabella Sermon"},{"character":"Eli Mills","name":"Rafe Spall"},{"character":"Sir Benjamin Lockwood","name":"James Cromwell"},{"character":"Franklin Webb","name":"Justice Smith"}]}}
+{
+	"results": {
+		"id": 1,
+		"title": "Jurassic World: Fallen Kingdom",
+		"genres": [
+			1,
+			2,
+			15
+		],
+		"description": "Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.",
+		"release_date": "2018-06-20",
+		"image": "test.jpg",
+		"director": "Juan Antonio Bayona",
+		"cast": [
+			{
+				"character": "Owen Grady",
+				"name": "Chris Pratt"
+			},
+			{
+				"character": "Claire Dearing",
+				"name": "Bryce Dallas Howard"
+			},
+			{
+				"character": "Maisie Lockwood",
+				"name": "Isabella Sermon"
+			},
+			{
+				"character": "Eli Mills",
+				"name": "Rafe Spall"
+			},
+			{
+				"character": "Sir Benjamin Lockwood",
+				"name": "James Cromwell"
+			},
+			{
+				"character": "Franklin Webb",
+				"name": "Justice Smith"
+			}
+		]
+	}
+}
