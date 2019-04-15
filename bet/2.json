@@ -9,5 +9,31 @@
 		"fansub": "Eternal Animes",
 		"quality": "Blu-Ray",
 		"page": "<a href=\"/2014/04/no-game-no-life.html\">Visit Google<\/a>",
+        "cast": [
+			{
+				"character": "Owen Grady",
+				"name": "Chris Pratt"
+			},
+			{
+				"character": "Claire Dearing",
+				"name": "Bryce Dallas Howard"
+			},
+			{
+				"character": "Maisie Lockwood",
+				"name": "Isabella Sermon"
+			},
+			{
+				"character": "Eli Mills",
+				"name": "Rafe Spall"
+			},
+			{
+				"character": "Sir Benjamin Lockwood",
+				"name": "James Cromwell"
+			},
+			{
+				"character": "Franklin Webb",
+				"name": "Justice Smith"
+			}
+		]
 	}
 }
