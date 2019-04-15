@@ -2,11 +2,6 @@
 	"results": {
 		"id": 2,
 		"title": "Jurassic World: Fallen Kingdom",
-		"genres": [
-			1,
-			2,
-			15
-		],
 		"description": "Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.",
 		"release_date": "2018-06-20",
 		"genero": "dfgfdg",
@@ -14,31 +9,6 @@
 		"quality": "tes",
 		"image": "4.bp.blogspot.com/-cmPoxdJ8W3o/W7mWIv1jvDI/AAAAAAAANP0/zVE3T5nEzvgY3AtVAUQ0k5qlCL8O58yVwCLcBGAs/s1600/Mahoutsukai-no-Yome-Hoshi-Matsu-Hito.jpg",
 		"page": "<a href=\"/2014/04/no-game-no-life.html\">Visit Google</a>",
-		"cast": [
-			{
-				"character": "Owen Grady",
-				"name": "Chris Pratt"
-			},
-			{
-				"character": "Claire Dearing",
-				"name": "Bryce Dallas Howard"
-			},
-			{
-				"character": "Maisie Lockwood",
-				"name": "Isabella Sermon"
-			},
-			{
-				"character": "Eli Mills",
-				"name": "Rafe Spall"
-			},
-			{
-				"character": "Sir Benjamin Lockwood",
-				"name": "James Cromwell"
-			},
-			{
-				"character": "Franklin Webb",
-				"name": "Justice Smith"
-			}
-		]
+		"cast": []
 	}
 }
