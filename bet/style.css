@@ -24,6 +24,7 @@ ol, ul {
 	float: left;
 	padding-top: 3%;
 	padding-right: 5px;
+	line-height: normal;
 }
 /* alternative color #6808869 */
 .hvr-grow a {
