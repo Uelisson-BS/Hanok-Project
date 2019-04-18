@@ -12,7 +12,6 @@ ol, ul {
 #post-wrapper {margin:auto;float:none;width: 1000px;}
 #outer-wrapper {width: 1100px;}
 #sidebar-wrapper {visibility: hidden; display: none;}
-.post_comments {font-size: 100%;}
 .hvr-grow a:after {
     content: url(img/icon4.png);
 	float: left;
