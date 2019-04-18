@@ -2,8 +2,8 @@
 	font-size: 14px;
 }
 .page-item:first-child .page-link {
-	font-family: arial;
-    margin-top: 10px;
+	font-family: arial!important;
+    margin-top: 10px!important;
 }
 #search-bar{
   float: left;
