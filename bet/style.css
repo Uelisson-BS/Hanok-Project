@@ -1,8 +1,11 @@
 #search-bar{
   float: left;
 }
+#menu-nav {
+	font-family: "Open Sans", "sans-serif";
+}
 .search {
-    font-size: 14px!important;
+    font-size: 13px!important;
 }
 ol, ul {
     margin: 0!important;
@@ -13,7 +16,7 @@ ol, ul {
 #sidebar-wrapper {visibility: hidden; display: none;}
 .post_comments {font-size: 100%;}
 .hvr-grow a:after {
-    content: url(img/icon4.png);
+    content: url(https://1.bp.blogspot.com/-84dciWHLOv8/XLjfWj2fdHI/AAAAAAAAN6g/Rq4xIRwAmaAlspvunHztB5pm37s2oyk8wCLcBGAs/s1600/icon-plus.png);
 	float: left;
 	padding-top: 3%;
 	padding-right: 5px;
@@ -116,7 +119,4 @@ background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/
     text-shadow: 0px 0px 1px #999;
 	width: 40px;
 	height: 30px;
-}
-#test {
-	background-image: url('img/icon.png');
 }
