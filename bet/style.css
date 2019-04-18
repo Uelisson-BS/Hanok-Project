@@ -1,8 +1,8 @@
 #search-bar{
   float: left;
 }
-.input.search-input {
-	font-size: 100%;
+form {
+    font-size: 100%;
 }
 ol, ul {
     list-style: none!important;
