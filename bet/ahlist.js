@@ -38,7 +38,7 @@
           <div class="col-sm-3">
             <div class="card mb-2 size">
               <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
-              <img src="${POSTER_URL}${item.image2}">
+              <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
                 <h6 class="card-title">${item.title}</h5>
               </div>
