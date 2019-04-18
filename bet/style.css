@@ -1,6 +1,9 @@
 #search-bar{
   float: left;
 }
+.post-body img {
+     background:none;
+}
 ol, ul {
     list-style: none;
     margin: 0!important;
