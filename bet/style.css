@@ -2,8 +2,8 @@
   float: left;
 }
 .input.search-input {
-	height: 45px;
-    font-size: 14px;
+	height: 45px!important;
+    font-size: 14px!important;
 }
 ol, ul {
     margin: 0!important;
