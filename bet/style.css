@@ -2,7 +2,7 @@
   float: left;
 }
 .input.search-input {
-	font-size: 13px;
+	font-size: 100%;
 }
 ol, ul {
     list-style: none!important;
