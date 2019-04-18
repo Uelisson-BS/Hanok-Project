@@ -44,7 +44,7 @@
               </div>
               <div class="card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
-              <!--  <button class="btn btn-primary btn-add-favorite" id="test" data-id="${item.id}">+</button>-->
+               <button class="btn btn-primary btn-add-favorite" id="test" data-id="${item.id}">+</button>
               </div>
             </div>
           </div>
