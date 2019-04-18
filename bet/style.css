@@ -1,9 +1,12 @@
 * {
 	font-size: 14px;
 }
+.page-item:last-child .page-link {
+		font-family: arial!important;
+    margin-top: 15px!important;
+}
 .page-item:first-child .page-link {
-	font-family: arial!important;
-    margin-top: 10px!important;
+
 }
 #search-bar{
   float: left;
