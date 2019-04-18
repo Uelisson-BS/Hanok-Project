@@ -1,3 +1,6 @@
+* {
+	font-size: 14px;
+}
 #search-bar{
   float: left;
 }
@@ -31,7 +34,7 @@ ol, ul {
 	text-decoration: none!important;
 	outline: none;
 	color: #fff!important;
-    text-shadow: #303030 1px 1px 1px;
+    text-shadow: #202020 1px 1px 1px;
 	text-align: center;
   display: inline-block;
   background-color: blueviolet;
