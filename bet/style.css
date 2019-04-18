@@ -1,6 +1,9 @@
 #search-bar{
   float: left;
 }
+#post-wrapper {margin:auto;float:none;width: 1000px;}
+#outer-wrapper {width: 1100px;}
+#sidebar-wrapper {visibility: hidden; display: none;}
 .hvr-grow a:after {
     content: url(img/icon4.png);
 	float: left;
