@@ -5,7 +5,11 @@
 	font-family: "Open Sans", "sans-serif";
 }
 .search {
+	width: 208px;
     font-size: 13px!important;
+}
+.input.search-input {
+	width: 208px;
 }
 ol, ul {
     margin: 0!important;
