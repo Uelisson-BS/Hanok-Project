@@ -1,18 +1,6 @@
 #search-bar{
   float: left;
 }
-.input.search-input {
-	font-size: 100%;
-}
-ol, ul {
-    list-style: none;
-    margin: 0!;
-    padding: 0t;
-}
-#post-wrapper {margin:auto;float:none;width: 1000px;}
-#outer-wrapper {width: 1100px;}
-#sidebar-wrapper {visibility: hidden; display: none;}
-.post_comments {font-size: 100%;}
 .hvr-grow a:after {
     content: url(img/icon4.png);
 	float: left;
@@ -107,8 +95,8 @@ h5 {
 	height: 40px;
     padding: 10px!important;
 }
-.lith img {
-    background url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+.lith {
+background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 5px;
     margin: 3px;
     padding: 6px;
