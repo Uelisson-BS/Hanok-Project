@@ -1,9 +1,9 @@
 #search-bar{
   float: left;
 }
-.input.search-input {
-	height: 45px!important;
-    font-size: 14px!important;
+.search-formt {
+	height: 45px;
+    font-size: 14px
 }
 ol, ul {
     margin: 0!important;
