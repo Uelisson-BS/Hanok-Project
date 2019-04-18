@@ -1,6 +1,16 @@
 #search-bar{
   float: left;
 }
+#menu-nav {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #333;
+}
+#post-wrapper {margin:auto;float:none;width: 1000px;}
+#outer-wrapper {width: 1100px;}
+#sidebar-wrapper {visibility: hidden; display: none;}
 .hvr-grow a:after {
     content: url(img/icon4.png);
 	float: left;
@@ -96,7 +106,7 @@ h5 {
     padding: 10px!important;
 }
 .lith {
-background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png");
+background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 5px;
     margin: 3px;
     padding: 6px;
