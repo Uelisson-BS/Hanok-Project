@@ -1,13 +1,16 @@
 #search-bar{
   float: left;
 }
+.input.search-input {
+	font-size: 13px;
+}
 ol, ul {
     list-style: none!important;
     margin: 0!important;
     padding: 0!important;
 }
-#post-wrapper {margin:auto;float:none;width: 1200px;}
-#outer-wrapper {width: 1200px;}
+#post-wrapper {margin:auto;float:none;width: 1100px;}
+#outer-wrapper {width: 1100px;}
 #sidebar-wrapper {visibility: hidden; display: none;}
 .hvr-grow a:after {
     content: url(img/icon4.png);
@@ -104,7 +107,7 @@ h5 {
     padding: 10px!important;
 }
 .lith {
-    background-image url('https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png')!important;
+    background-image url('https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png') repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 5px;
     margin: 3px;
     padding: 6px;
