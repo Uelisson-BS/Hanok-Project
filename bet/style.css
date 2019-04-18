@@ -1,0 +1,111 @@
+#search-bar{
+  float: left;
+}
+.hvr-grow a:after {
+    content: url(img/icon4.png);
+	float: left;
+	padding-top: 3%;
+	padding-right: 5px;
+}
+/* alternative color #6808869 */
+.hvr-grow a {
+	text-decoration: none!important;
+	outline: none;
+	color: #fff!important;
+    text-shadow: #303030 1px 1px 1px;
+	text-align: center;
+  display: inline-block;
+  background-color: blueviolet;
+  padding: 4px;
+  padding-right: 3%;
+  padding-left: 2%;
+  border-radius: 5px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover a, .hvr-grow:focus a, .hvr-grow:active a {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.viewbox {
+  float: right; 
+  }
+.clearfix: {
+    clear: both;
+}
+.view {
+  display:inline-block;
+}
+
+#data-panel {
+  margin-top: 20px;
+}
+
+h5 {
+  padding-top: 15px;
+}
+.fa-th, .fa-bars {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hover-color-change {
+  color: white;
+  background-color: black;
+}
+
+.size:hover {
+  z-index:1;
+  transform:scale(1.05);
+  box-shadow:0px 0px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.col-sm-8 {
+	max-width: 50%!important;
+}
+.col-sm-4 {
+    flex: 48%!important;
+    max-width: 48%!important;
+}
+.fansub {
+	color: #b45f06;
+}
+.quality {
+	color: #0b5394;
+}
+.card-body {
+	margin: 3px;
+    padding: 5px;
+    background-image: url('https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png');
+    color: #ffffff;
+    position: absolute;
+    bottom: 63px;
+    text-shadow: #000000 1px 1px 1px;
+    font-family: Tahoma,Geneva,sans-serif;
+    border-radius: 5px;
+	height: 40px;
+    padding: 10px!important;
+}
+.lith {
+background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 6px;
+    position: absolute;
+    top: 0px;
+    text-shadow: 0px 0px 1px #999;
+	width: 40px;
+	height: 30px;
+}
+#test {
+	background-image: url('img/icon.png');
+}
