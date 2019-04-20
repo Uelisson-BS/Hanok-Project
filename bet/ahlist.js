@@ -68,7 +68,7 @@
   }).catch((err) => console.log(err))
 	
 	  // 取得資料
-  axios2.get(INDEX_URL2)
+  axios.get(INDEX_URL2)
     .then((response) => {
       rawData = response.data.results
       // 預設 hilight Action
