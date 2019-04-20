@@ -68,7 +68,6 @@
       
       const filterAction = filterDataByGenres(1)
       displayMovies(filterAction)
-    })
   }).catch((err) => console.log(err))
   
 
