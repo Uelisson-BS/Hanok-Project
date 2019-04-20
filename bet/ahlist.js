@@ -1,41 +1,62 @@
-(function () {
+(function() {
   const BASE_URL = 'https://uelisson-bs.github.io'
   const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
-  const data = []
- 
-  const searchBtn = document.getElementById('submit-search')
-  const searchInput = document.getElementById('search')
-
-  const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 8
+  const displayPanel = document.querySelector('.display-panel')
+  const nav = document.querySelector('.nav')
+  const genres = {
+                  "1": "Action",
+                  "2": "Adventure",
+                  "3": "Animation",
+                  "4": "Comedy",
+                  "5": "Crime",
+                  "6": "Documentary",
+                  "7": "Drama",
+                  "8": "Family",
+                  "9": "Fantasy",
+                  "10": "History",
+                  "11": "Horror",
+                  "12": "Music",
+                  "13": "Mystery",
+                  "14": "Romance",
+                  "15": "Science Fiction",
+                  "16": "TV Movie",
+                  "17": "Thriller",
+                  "18": "War",
+                  "19": "Western"
+                }
+  let rawData = []
   
-  const listModel = document.getElementById("btn-listModel")
-  const cardModel = document.getElementById("btn-cardModel")
+  // 顯示導覽列
+  let navHTML = ``
+  for (item in genres) {
+    navHTML += `
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-id="${item}">${genres[item]}</a>
+      </li>
+    `  
+  }
+  nav.innerHTML = navHTML
   
-  // 設定一個判斷Model的Boolean
-  let isListModel = false
-  // 將頁數預設在第一頁
-  let page = 1
-
-  const dataPanel = document.getElementById('data-panel')
+  // 取得資料
+  axios.get(INDEX_URL2)
+    .then((response) => {
+      rawData = response.data.results
+      // 預設 hilight Action
+      nav.firstElementChild
+          .firstElementChild.classList.add('active')
+      
+      const filterAction = filterDataByGenres(1)
+      displayMovies(filterAction)
+    })
+    .catch((err) => console.log(err))
   
-
-  axios.get(INDEX_URL).then((response) => {
-    data.push(...response.data.results)
-    console.log(data)
-    getTotalPages (data)
-    getPageData(1, data)
-  }).catch((err) => console.log(err))
-  
-
-  function displayDataList (data) {
-    let htmlContent = ''
-    if (isListModel === false) {
-      data.forEach(function (item, index) {
-        htmlContent += `
-          <div class="col-sm-3">
+  function displayMovies(data) {
+    let contentHTML = ``
+    data.forEach( item => {
+      contentHTML += `
+    <div class="col-sm-3">
             <div class="card mb-2 size">
               <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
               <img class="lith" src="${POSTER_URL}${item.image2}">
@@ -66,12 +87,11 @@
             </div>
           </div>
       `
-      })
-   }
-    dataPanel.innerHTML = htmlContent
- }    
-
-  function showMovie (id) {
+    })
+    displayPanel.innerHTML = contentHTML
+  }
+	
+	  function showMovie (id) {
     // get elements
     const modalTitle = document.getElementById('show-movie-title')
     const modalImage = document.getElementById('show-movie-image')
@@ -195,78 +215,6 @@ console.log(arr); // ['a', 'b', 'c'
       getPageData(event.target.dataset.page)
     }
   })
-})()
-(function() {
-  const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
-  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
-  const POSTER_URL = 'https://'
-  const displayPanel = document.querySelector('.display-panel')
-  const nav = document.querySelector('.nav')
-  const genres = {
-                  "1": "Action",
-                  "2": "Adventure",
-                  "3": "Animation",
-                  "4": "Comedy",
-                  "5": "Crime",
-                  "6": "Documentary",
-                  "7": "Drama",
-                  "8": "Family",
-                  "9": "Fantasy",
-                  "10": "History",
-                  "11": "Horror",
-                  "12": "Music",
-                  "13": "Mystery",
-                  "14": "Romance",
-                  "15": "Science Fiction",
-                  "16": "TV Movie",
-                  "17": "Thriller",
-                  "18": "War",
-                  "19": "Western"
-                }
-  let rawData = []
-  
-  // 顯示導覽列
-  let navHTML = ``
-  for (item in genres) {
-    navHTML += `
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-id="${item}">${genres[item]}</a>
-      </li>
-    `  
-  }
-  nav.innerHTML = navHTML
-  
-  // 取得資料
-  axios.get(BASE_URL + INDEX + 'movies')
-    .then((response) => {
-      rawData = response.data.results
-      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
-      
-      const filterAction = filterDataByGenres(1)
-      displayMovies(filterAction)
-    })
-    .catch((err) => console.log(err))
-  
-  function displayMovies(data) {
-    let contentHTML = ``
-    data.forEach( item => {
-      contentHTML += `
-        <div class="col-4 mb-3">
-          <div class="card">
-            <img src="${BASE_URL}${POSTERS}${item.image}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${item.title}</h5>
-              ${displayGenres(item.genres)}
-            </div>
-          </div>
-        </div>
-      `
-    })
-    displayPanel.innerHTML = contentHTML
-  }
   
   function displayGenres(array) {
     let genresHTML = ``
@@ -295,11 +243,3 @@ console.log(arr); // ['a', 'b', 'c'
     navLinkArray.forEach( item => {
       item.classList.remove('active')
     })
-    // hilight 選項
-    event.target.classList.add('active')
-    // filter display
-    const genresId = event.target.dataset.id
-    const filterData = filterDataByGenres(genresId)
-    displayMovies(filterData)
-  })
-})()
