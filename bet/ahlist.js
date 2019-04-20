@@ -40,13 +40,6 @@
   }
   nav.innerHTML = navHTML
 	
-// 取得資料
-  axios.get(INDEX_URL2)
-    .then((response) => {
-      rawData = response.data.results
-      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
       
       const filterAction = filterDataByGenres(1)
       displayDataList(filterAction)
