@@ -38,7 +38,6 @@
       </li>
     `  
   }
-  nav.innerHTML = navHTML
 
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
