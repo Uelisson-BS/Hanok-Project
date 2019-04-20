@@ -1,6 +1,6 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
+  const INDEX_URL = BASE_URL + '/Hanok-Project/assets/AH-List/db-list.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
@@ -39,6 +39,20 @@
     `  
   }
   nav.innerHTML = navHTML
+	
+// 取得資料
+  axios.get(INDEX_URL2)
+    .then((response) => {
+      rawData = response.data.results
+      // 預設 hilight Action
+      nav.firstElementChild
+          .firstElementChild.classList.add('active')
+      
+      const filterAction = filterDataByGenres(1)
+      displayDataList(filterAction)
+    })
+    .catch((err) => console.log(err))
+  
 
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
@@ -104,7 +118,42 @@
       })
    }
     dataPanel.innerHTML = htmlContent
- }    
+ }
+	
+	  function displayGenres(array) {
+    let genresHTML = ``
+    array.forEach(item => {
+      genresHTML += `
+        <span class="badge badge-secondary">${genres[item]}</span>
+      `
+    })
+    return genresHTML
+  }
+  
+  function filterDataByGenres(genresNumber) {
+    const genresId = Number(genresNumber)
+    console.log(genresId)
+    const result = rawData.filter( item => { 
+      // 電影是否包含該類型
+      const isGenres = item.genres.some( item => { return item === genresId} )
+      return isGenres })
+    return result
+  }
+  
+  // hilight 所選的導覽項目
+  nav.addEventListener('click',() => {
+    // 先清除所有 active class
+    const navLinkArray = document.querySelectorAll('.nav-link')
+    navLinkArray.forEach( item => {
+      item.classList.remove('active')
+    })
+    // hilight 選項
+    event.target.classList.add('active')
+    // filter display
+    const genresId = event.target.dataset.id
+    const filterData = filterDataByGenres(genresId)
+    displayDataList(filterData)
+  })
 
   function showMovie (id) {
     // get elements
