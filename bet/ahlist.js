@@ -41,18 +41,6 @@
   }
   nav.innerHTML = navHTML
   
-  // 取得資料
-  axios.get(INDEX_URL2)
-    .then((response) => {
-      rawData = response.data.results
-      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
-      
-      const filterAction = filterDataByGenres(1)
-      displayMovies(filterAction)
-    })
-    .catch((err) => console.log(err))
   
 
   const searchBtn = document.getElementById('submit-search')
@@ -77,6 +65,13 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
+      // 預設 hilight Action
+      nav.firstElementChild
+          .firstElementChild.classList.add('active')
+      
+      const filterAction = filterDataByGenres(1)
+      displayDataList(filterAction)
+    })
   }).catch((err) => console.log(err))
   
 
@@ -120,7 +115,7 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
-	
+
 		
   function displayGenres(array) {
     let genresHTML = ``
@@ -154,8 +149,9 @@
     // filter display
     const genresId = event.target.dataset.id
     const filterData = filterDataByGenres(genresId)
-    displayMovies(filterData)
+    displayDataList(filterData)
   })
+
 
   function showMovie (id) {
     // get elements
