@@ -1,8 +1,9 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
+  const INDEX_URL = BASE_URL + '/Hanok-Project/assets/AH-List/db-list.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
+  const data = []
   const displayPanel = document.querySelector('.display-panel')
   const nav = document.querySelector('.nav')
   const genres = {
@@ -37,7 +38,7 @@
       </li>
     `  
   }
-	  nav.innerHTML = navHTML
+  nav.innerHTML = navHTML
 
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
