@@ -155,7 +155,7 @@
     const filterData = filterDataByGenres(genresId)
     displayDataList(filterData)
   })
-})
+}
 
   function showMovie (id) {
     // get elements
