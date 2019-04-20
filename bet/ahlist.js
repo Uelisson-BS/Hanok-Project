@@ -196,13 +196,7 @@ console.log(arr); // ['a', 'b', 'c'
       getPageData(event.target.dataset.page)
     }
   })
-})()
-(function() {
-  const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
-  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
-  const POSTER_URL = 'https://'
-  const displayPanel = document.querySelector('.display-panel')
+	 const displayPanel = document.querySelector('.display-panel')
   const nav = document.querySelector('.nav')
   const genres = {
                   "1": "Action",
@@ -250,24 +244,6 @@ console.log(arr); // ['a', 'b', 'c'
       displayMovies(filterAction)
     })
     .catch((err) => console.log(err))
-  
-  function displayMovies(data) {
-    let contentHTML = ``
-    data.forEach( item => {
-      contentHTML += `
-        <div class="col-4 mb-3">
-          <div class="card">
-            <img src="${BASE_URL}${POSTERS}${item.image}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${item.title}</h5>
-              ${displayGenres(item.genres)}
-            </div>
-          </div>
-        </div>
-      `
-    })
-    displayPanel.innerHTML = contentHTML
-  }
   
   function displayGenres(array) {
     let genresHTML = ``
