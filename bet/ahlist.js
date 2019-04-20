@@ -4,22 +4,6 @@
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
-
-  const searchBtn = document.getElementById('submit-search')
-  const searchInput = document.getElementById('search')
-
-  const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 8
-  
-  const listModel = document.getElementById("btn-listModel")
-  const cardModel = document.getElementById("btn-cardModel")
-  
-  // 設定一個判斷Model的Boolean
-  let isListModel = false
-  // 將頁數預設在第一頁
-  let page = 1
-
-  const dataPanel = document.getElementById('data-panel')
   
    const displayPanel = document.querySelector('.display-panel')
   const nav = document.querySelector('.nav')
@@ -57,17 +41,7 @@
   }
   nav.innerHTML = navHTML
   
-  
-  
-
-  axios.get(INDEX_URL).then((response) => {
-    data.push(...response.data.results)
-    console.log(data)
-    getTotalPages (data)
-    getPageData(1, data)
-  }).catch((err) => console.log(err))
-	
-	  // 取得資料
+  // 取得資料
   axios.get(INDEX_URL2)
     .then((response) => {
       rawData = response.data.results
@@ -76,9 +50,34 @@
           .firstElementChild.classList.add('active')
       
       const filterAction = filterDataByGenres(1)
-      displayDataList(filterAction)
+      displayMovies(filterAction)
     })
     .catch((err) => console.log(err))
+  
+
+  const searchBtn = document.getElementById('submit-search')
+  const searchInput = document.getElementById('search')
+
+  const pagination = document.getElementById('pagination')
+  const ITEM_PER_PAGE = 8
+  
+  const listModel = document.getElementById("btn-listModel")
+  const cardModel = document.getElementById("btn-cardModel")
+  
+  // 設定一個判斷Model的Boolean
+  let isListModel = false
+  // 將頁數預設在第一頁
+  let page = 1
+
+  const dataPanel = document.getElementById('data-panel')
+  
+
+  axios.get(INDEX_URL).then((response) => {
+    data.push(...response.data.results)
+    console.log(data)
+    getTotalPages (data)
+    getPageData(1, data)
+  }).catch((err) => console.log(err))
   
 
   function displayDataList (data) {
@@ -121,7 +120,9 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
-	  function displayGenres(array) {
+	
+		
+  function displayGenres(array) {
     let genresHTML = ``
     array.forEach(item => {
       genresHTML += `
@@ -153,9 +154,8 @@
     // filter display
     const genresId = event.target.dataset.id
     const filterData = filterDataByGenres(genresId)
-    displayDataList(filterData)
+    displayMovies(filterData)
   })
-}
 
   function showMovie (id) {
     // get elements
@@ -280,41 +280,4 @@ console.log(arr); // ['a', 'b', 'c'
     if (event.target.tagName === 'A') {
       getPageData(event.target.dataset.page)
     }
-  })
-	
-	
-  function displayGenres(array) {
-    let genresHTML = ``
-    array.forEach(item => {
-      genresHTML += `
-        <span class="badge badge-secondary">${genres[item]}</span>
-      `
-    })
-    return genresHTML
-  }
-  
-  function filterDataByGenres(genresNumber) {
-    const genresId = Number(genresNumber)
-    console.log(genresId)
-    const result = rawData.filter( item => { 
-      // 電影是否包含該類型
-      const isGenres = item.genres.some( item => { return item === genresId} )
-      return isGenres })
-    return result
-  }
-  
-  // hilight 所選的導覽項目
-  nav.addEventListener('click',() => {
-    // 先清除所有 active class
-    const navLinkArray = document.querySelectorAll('.nav-link')
-    navLinkArray.forEach( item => {
-      item.classList.remove('active')
-    })
-    // hilight 選項
-    event.target.classList.add('active')
-    // filter display
-    const genresId = event.target.dataset.id
-    const filterData = filterDataByGenres(genresId)
-    displayMovies(filterData)
-  })
-})()
+  })()
