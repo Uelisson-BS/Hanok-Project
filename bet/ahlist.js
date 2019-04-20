@@ -1,15 +1,50 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
-  const INDEX_URL2 = BASE_URL + '/Hanok-Project/bet/'
+  const INDEX_URL = BASE_URL + '/Hanok-Project/assets/AH-List/db-list.json'
+  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
+  const displayPanel = document.querySelector('.display-panel')
+  const nav = document.querySelector('.nav')
+  const genres = {
+                  "1": "Action",
+                  "2": "Adventure",
+                  "3": "Animation",
+                  "4": "Comedy",
+                  "5": "Crime",
+                  "6": "Documentary",
+                  "7": "Drama",
+                  "8": "Family",
+                  "9": "Fantasy",
+                  "10": "History",
+                  "11": "Horror",
+                  "12": "Music",
+                  "13": "Mystery",
+                  "14": "Romance",
+                  "15": "Science Fiction",
+                  "16": "TV Movie",
+                  "17": "Thriller",
+                  "18": "War",
+                  "19": "Western"
+                }
+  let rawData = []
+  
+  // 顯示導覽列
+  let navHTML = ``
+  for (item in genres) {
+    navHTML += `
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-id="${item}">${genres[item]}</a>
+      </li>
+    `  
+  }
+  nav.innerHTML = navHTML
 
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
 
   const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 12
+  const ITEM_PER_PAGE = 8
   
   const listModel = document.getElementById("btn-listModel")
   const cardModel = document.getElementById("btn-cardModel")
@@ -40,7 +75,7 @@
               <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
               <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.title}</h5>
+                <h6 class="card-title">${item.titulo}</h5>
               </div>
               <div class="card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
@@ -56,7 +91,7 @@
           <div class="container">
             <div class="row size">
               <div class="col-9">
-                <h5>${item.title}</h5>
+                <h5>${item.titulo}</h5>
               </div>
               <div class="col-3 card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
