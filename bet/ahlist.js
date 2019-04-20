@@ -233,7 +233,7 @@ console.log(arr); // ['a', 'b', 'c'
   nav.innerHTML = navHTML
   
   // 取得資料
-  axios.get(BASE_URL + INDEX + 'movies')
+  axios.get(INDEX_URL2)
     .then((response) => {
       rawData = response.data.results
       // 預設 hilight Action
