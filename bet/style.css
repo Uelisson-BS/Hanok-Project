@@ -1,6 +1,9 @@
 * {
 	font-size: 14px;
 }
+.nav ul {
+display: flex!important;
+}
 .page-item:last-child .page-link {
 		font-family: arial!important;
     margin-top: 15px!important;
