@@ -78,7 +78,7 @@
     const modalDescription = document.getElementById('show-movie-description')
 
     // set request url
-    const url = INDEX_URL + id
+    const url = INDEX_URL2 + id + '.json'
     console.log(url)
 
     // send request to show api
