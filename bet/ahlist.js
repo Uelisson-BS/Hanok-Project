@@ -44,7 +44,7 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let data.push = []
+  let push = []
   
   // 顯示導覽列
   let navHTML = ``
