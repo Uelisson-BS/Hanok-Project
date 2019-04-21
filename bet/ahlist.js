@@ -56,6 +56,26 @@ for (let list in classList) {
   classification.innerHTML += classdata
 }
 
+// 分類list監聽
+classification.addEventListener('click', function(event) {
+  let link = document.querySelectorAll('.nav-link')
+  for (let i = 0; i < link.length; i++) {
+    link[i].classList.remove('active')
+  }
+  event.target.classList.add('active')
+  let content = event.target.innerHTML
+  let results = []
+  results = data.filter(item => getGenresName(item.genres).match(content))
+  displayDataList(results)
+})
+
+axios.get(INDEX_URL)
+  .then(response => {
+    data.push(...response.data.results)
+    displayDataList(data)
+})
+.catch(error => console.log(error))
+
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
 	displayDataList(data)
