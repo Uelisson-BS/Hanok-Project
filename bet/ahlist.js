@@ -21,6 +21,7 @@
 
   const dataPanel = document.getElementById('data-panel')
   
+  const displayPanel = document.querySelector('.display-panel')
   const nav = document.querySelector('.nav')
   const genres = {
                   "1": "Action",
@@ -43,7 +44,7 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let push = []
+  let rawData = []
   
   // 顯示導覽列
   let navHTML = ``
@@ -57,17 +58,13 @@
   nav.innerHTML = navHTML
   
 
-  axios.get(INDEX_URL)
-    .then((response) => {
-     rawData = response.data.results
-      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
-      
-      const filterAction = filterDataByGenres(1)
-      displayDataList(filterAction)
-    })
-    .catch((err) => console.log(err))
+  axios.get(INDEX_URL).then((response) => {
+    data.push(...response.data.results)
+    console.log(data)
+    getTotalPages (data)
+    getPageData(1, data)
+  }).catch((err) => console.log(err))
+  
 
   function displayDataList (data) {
     let htmlContent = ''
