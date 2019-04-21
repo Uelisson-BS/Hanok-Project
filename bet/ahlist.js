@@ -43,7 +43,7 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let push = []
+  let date = []
   
   // 顯示導覽列
   let navHTML = ``
@@ -124,7 +124,7 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = push.filter( item => { 
+    const result = date.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres })
