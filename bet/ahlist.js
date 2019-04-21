@@ -3,8 +3,8 @@
   const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
+  const dataPanel = document.querySelector('[data-movie-list]')
   const data = []
-  const movieList = document.querySelector('[data-movie-list]')
   let data = []
 
   const searchBtn = document.getElementById('submit-search')
