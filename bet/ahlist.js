@@ -57,19 +57,17 @@
   nav.innerHTML = navHTML
   
 
-  axios.get(INDEX_URL).then((response) => {
-    data.push(...response.data.results)
-    console.log(data)
-    getTotalPages (data)
-    getPageData(1, data)
-        push = response.data.results
+  axios.get(BASE_URL + '/Hanok-Project/bet/movies.json')
+    .then((response) => {
+     rawData = response.data.results
       // 預設 hilight Action
       nav.firstElementChild
           .firstElementChild.classList.add('active')
       
       const filterAction = filterDataByGenres(1)
       displayDataList(filterAction)
-  }).catch((err) => console.log(err))
+    })
+    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
@@ -125,7 +123,7 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = data.filter( item => { 
+    const result = rawData.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres })
