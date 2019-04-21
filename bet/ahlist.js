@@ -65,18 +65,6 @@
     getPageData(1, data)
   }).catch((err) => console.log(err))
   
-	// 取得資料
-  axios.get(BASE_URL + '/Hanok-Project/bet/movies.json')
-    .then((response) => {
-     rawData = response.data.results
-      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
-      
-      const filterAction = filterDataByGenres(1)
-      displayDataList(filterAction)
-    })
-    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
@@ -132,7 +120,7 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = rawData.filter( item => { 
+    const result = push.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres })
