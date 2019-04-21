@@ -4,12 +4,12 @@
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
-  
+
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
 
   const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 8
+  const ITEM_PER_PAGE = 12
   
   const listModel = document.getElementById("btn-listModel")
   const cardModel = document.getElementById("btn-cardModel")
@@ -37,14 +37,13 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
-              <img class="lith" src="${POSTER_URL}${item.image2}">
+              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.titulo}</h5>
+                <h6 class="card-title">${item.title}</h5>
               </div>
               <div class="card-footer">
-                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
-               <!--<button class="btn btn-primary btn-add-favorite" data-id="${item.id}">+</button>-->
+                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
+                <button class="btn btn-info btn-add-favorite" data-id="${item.id}">+</button>
               </div>
             </div>
           </div>
@@ -56,12 +55,12 @@
           <div class="container">
             <div class="row size">
               <div class="col-9">
-                <h5>${item.titulo}</h5>
+                <h5>${item.title}</h5>
               </div>
               <div class="col-3 card-footer">
-                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
-                <!-- favorite button btn-primary --> 
-               <!-- <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>--> 
+                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
+                <!-- favorite button --> 
+                <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>
               </div>
             </div>
           </div>
@@ -79,16 +78,11 @@
     const modalDescription = document.getElementById('show-movie-description')
 
     // set request url
-    const url = INDEX_URL2 + id + '.json'
+    const url = INDEX_URL + id
     console.log(url)
 
     // send request to show api
     axios.get(url).then(response => {
-		var arr = [ 'a', 'b', 'c'];
-arr.push('d'); // insert as last item
-console.log(arr); // ['a', 'b', 'c', 'd']
-console.log(arr.pop()); // remove last item
-console.log(arr); // ['a', 'b', 'c'
       const data = response.data.results
       console.log(data)
 
@@ -187,4 +181,5 @@ console.log(arr); // ['a', 'b', 'c'
       getPageData(event.target.dataset.page)
     }
   })
+  
 })()
