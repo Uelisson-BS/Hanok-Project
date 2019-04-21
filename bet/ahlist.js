@@ -63,6 +63,10 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
+	        nav.firstElementChild
+          .firstElementChild.classList.add('active')
+      
+      const filterAction = filterDataByGenres(1)
   }).catch((err) => console.log(err))
   
 
