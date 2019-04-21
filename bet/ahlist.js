@@ -20,7 +20,30 @@
   let page = 1
 
   const dataPanel = document.getElementById('data-panel')
-  
+  const displayPanel = document.querySelector('.display-panel')
+  const nav = document.querySelector('.nav')
+  const genres = {
+                  "1": "Action",
+                  "2": "Adventure",
+                  "3": "Animation",
+                  "4": "Comedy",
+                  "5": "Crime",
+                  "6": "Documentary",
+                  "7": "Drama",
+                  "8": "Family",
+                  "9": "Fantasy",
+                  "10": "History",
+                  "11": "Horror",
+                  "12": "Music",
+                  "13": "Mystery",
+                  "14": "Romance",
+                  "15": "Science Fiction",
+                  "16": "TV Movie",
+                  "17": "Thriller",
+                  "18": "War",
+                  "19": "Western"
+                }
+  let rawData = []
 
   
   // 顯示導覽列
@@ -83,16 +106,6 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
-  
-  function filterDataByGenres(genresNumber) {
-    const genresId = Number(genresNumber)
-    console.log(genresId)
-    const result = rawData.filter( item => { 
-      // 電影是否包含該類型
-      const isGenres = item.genres.some( item => { return item === genresId} )
-      return isGenres })
-    return result
-  }
   
   // hilight 所選的導覽項目
   nav.addEventListener('click',() => {
