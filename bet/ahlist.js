@@ -66,9 +66,9 @@
   }).catch((err) => console.log(err))
   
 	// 取得資料
-  axios.get(INDEX_URL)
+  axios.get(BASE_URL + '/Hanok-Project/bet/movies.json')
     .then((response) => {
-      data.push = response.data.results
+     rawData = response.data.results
       // 預設 hilight Action
       nav.firstElementChild
           .firstElementChild.classList.add('active')
