@@ -131,10 +131,11 @@
     const result = rawData.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
-	      console.log(results)
+      return isGenres
+	  console.log(results)
     getTotalPages(results)
     getPageData(1, results)
-      return isGenres })
+	})
     return result
   }
   
