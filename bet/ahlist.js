@@ -43,9 +43,6 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let rawData = []
-
-
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
