@@ -5,29 +5,6 @@
   const POSTER_URL = 'https://'
   const data = []
 
-  const nav = document.querySelector('.nav')
-  const genres = {
-                  "1": "Action",
-                  "2": "Adventure",
-                  "3": "Animation",
-                  "4": "Comedy",
-                  "5": "Crime",
-                  "6": "Documentary",
-                  "7": "Drama",
-                  "8": "Family",
-                  "9": "Fantasy",
-                  "10": "History",
-                  "11": "Horror",
-                  "12": "Music",
-                  "13": "Mystery",
-                  "14": "Romance",
-                  "15": "Science Fiction",
-                  "16": "TV Movie",
-                  "17": "Thriller",
-                  "18": "War",
-                  "19": "Western"
-                }
-
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
 
@@ -51,6 +28,29 @@
     getPageData(1, data)
   }).catch((err) => console.log(err))
   
+	 const nav = document.querySelector('.nav')
+  const genres = {
+                  "1": "Action",
+                  "2": "Adventure",
+                  "3": "Animation",
+                  "4": "Comedy",
+                  "5": "Crime",
+                  "6": "Documentary",
+                  "7": "Drama",
+                  "8": "Family",
+                  "9": "Fantasy",
+                  "10": "History",
+                  "11": "Horror",
+                  "12": "Music",
+                  "13": "Mystery",
+                  "14": "Romance",
+                  "15": "Science Fiction",
+                  "16": "TV Movie",
+                  "17": "Thriller",
+                  "18": "War",
+                  "19": "Western"
+                }
+
 
   function displayDataList (data) {
     let htmlContent = ''
