@@ -74,7 +74,7 @@
           .firstElementChild.classList.add('active')
       
       const filterAction = filterDataByGenres(1)
-      displayDataList(filterAction)
+      displayMovies(filterAction)
     })
     .catch((err) => console.log(err))
 
@@ -151,7 +151,7 @@
     // filter display
     const genresId = event.target.dataset.id
     const filterData = filterDataByGenres(genresId)
-    displayDataList(filterData)
+    displayMovies(filterData)
   })
 
   function showMovie (id) {
