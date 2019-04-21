@@ -132,10 +132,10 @@
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres
-	  console.log(results)
+	})
+		  console.log(results)
     getTotalPages(results)
     getPageData(1, results)
-	})
     return result
   }
   
