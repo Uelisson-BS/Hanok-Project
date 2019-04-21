@@ -63,6 +63,8 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
+    const filterAction = filterDataByGenres(1)
+    displayDataList(filterAction)
   }).catch((err) => console.log(err))
   
 
