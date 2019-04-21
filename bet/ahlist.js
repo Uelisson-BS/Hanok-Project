@@ -43,7 +43,7 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let rawData = []
+  let push = []
   
   // 顯示導覽列
   let navHTML = ``
@@ -62,22 +62,13 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
-  }).catch((err) => console.log(err))
-  
-		// 取得資料
-  axios.get(INDEX_URL)
-    .then((response) => {
-     rawData = response.data.results
-	      console.log(data)
-	      getTotalPages (data)
-    getPageData(1, data)
-      // 預設 hilight Action
+	      // 預設 hilight Action
       nav.firstElementChild
           .firstElementChild.classList.add('active')
       const filterAction = filterDataByGenres(1)
       displayDataList(filterAction)
-    })
-    .catch((err) => console.log(err))
+  }).catch((err) => console.log(err))
+ 
 
   function displayDataList (data) {
     let htmlContent = ''
