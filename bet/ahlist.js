@@ -43,7 +43,7 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let date = []
+  let rawData = []
   
   // 顯示導覽列
   let navHTML = ``
@@ -62,13 +62,17 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
-	      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
-      const filterAction = filterDataByGenres(1)
-      displayDataList(filterAction)
   }).catch((err) => console.log(err))
- 
+  
+		// 取得資料
+  axios.get(INDEX_URL)
+    .then((response) => {
+     rawData = response.data.results
+	      console.log(data)
+	      getTotalPages (data)
+    getPageData(1, data)
+    })
+    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
@@ -124,9 +128,12 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = data.filter( item => { 
+    const result = rawData.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
+	      console.log(results)
+    getTotalPages(results)
+    getPageData(1, results)
       return isGenres })
     return result
   }
