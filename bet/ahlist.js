@@ -4,9 +4,6 @@
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
-  
-  
-  const dataPanel = document.getElementById('data-panel')
 
   const nav = document.querySelector('.nav')
   const genres = {
@@ -44,6 +41,8 @@
   let isListModel = false
   // 將頁數預設在第一頁
   let page = 1
+  
+  const dataPanel = document.getElementById('data-panel')
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
