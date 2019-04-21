@@ -37,13 +37,13 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap">
+              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal">
               <div class="card-body movie-item-body ">
                 <h6 class="card-title">${item.title}</h5>
               </div>
               <div class="card-footer">
-                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
-                <button class="btn btn-info btn-add-favorite" data-id="${item.id}">+</button>
+            <!--    <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>-->
+              <!--  <button class="btn btn-info btn-add-favorite" data-id="${item.id}">+</button>-->
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
               <div class="col-9">
                 <h5>${item.title}</h5>
               </div>
-              <div class="col-3 card-footer">
+              <div class="col-3 card-footer" data-toggle="modal" data-target="#show-movie-modal">
                 <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
                 <!-- favorite button --> 
                 <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>
