@@ -63,8 +63,6 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
-    const filterAction = filterDataByGenres(1)
-    displayDataList(filterAction)
   }).catch((err) => console.log(err))
   
 
@@ -108,16 +106,6 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
-	
-	  function displayGenres(array) {
-    let genresHTML = ``
-    array.forEach(item => {
-      genresHTML += `
-        <span class="badge badge-secondary">${genres[item]}</span>
-      `
-    })
-    return genresHTML
-  }
   
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
