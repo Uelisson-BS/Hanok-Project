@@ -21,62 +21,46 @@
 
   const dataPanel = document.getElementById('data-panel')
   
-  const displayPanel = document.querySelector('.display-panel')
-  const nav = document.querySelector('.nav')
-  const genres = {
-                  "1": "Action",
-                  "2": "Adventure",
-                  "3": "Animation",
-                  "4": "Comedy",
-                  "5": "Crime",
-                  "6": "Documentary",
-                  "7": "Drama",
-                  "8": "Family",
-                  "9": "Fantasy",
-                  "10": "History",
-                  "11": "Horror",
-                  "12": "Music",
-                  "13": "Mystery",
-                  "14": "Romance",
-                  "15": "Science Fiction",
-                  "16": "TV Movie",
-                  "17": "Thriller",
-                  "18": "War",
-                  "19": "Western"
-                }
-  let rawData = []
-  
-  // 顯示導覽列
-  let navHTML = ``
-  for (item in genres) {
-    navHTML += `
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-id="${item}">${genres[item]}</a>
-      </li>
-    `  
-  }
-  nav.innerHTML = navHTML
-  
+  const classification = document.querySelector('[data-alpha-pos="class"]')
+const classList = {
+  "1": "Action",
+  "2": "Adventure",
+  "3": "Animation",
+  "4": "Comedy",
+  "5": "Crime",
+  "6": "Documentary",
+  "7": "Drama",
+  "8": "Family",
+  "9": "Fantasy",
+  "10": "History",
+  "11": "Horror",
+  "12": "Music",
+  "13": "Mystery",
+  "14": "Romance",
+  "15": "Science Fiction",
+  "16": "TV Movie",
+  "17": "Thriller",
+  "18": "War",
+  "19": "Western"
+}
+
+// 取分類資料
+for (let list in classList) {
+  let classdata = `
+    <li class="nav-item">
+      <a class="nav-link" href="#">${classList[list]}</a>
+    </li>
+  `
+  classification.innerHTML += classdata
+}
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
+	displayDataList(data)
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
   }).catch((err) => console.log(err))
-  
-	// 取得資料
-  axios.get(INDEX_URL)
-    .then((response) => {
-      rawData = response.data.results
-      // 預設 hilight Action
-      nav.firstElementChild
-          .firstElementChild.classList.add('active')
-      
-      const filterAction = filterDataByGenres(1)
-      displayDataList(filterAction)
-    })
-    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
@@ -85,7 +69,7 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
+              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal">
               <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
                 <h6 class="card-title">${item.titulo}</h5>
@@ -119,52 +103,16 @@
     dataPanel.innerHTML = htmlContent
  }    
 	
-	  function displayGenres(array) {
-    let genresHTML = ``
-    array.forEach(item => {
-      genresHTML += `
-        <span class="badge badge-secondary">${genres[item]}</span>
-      `
-    })
-    return genresHTML
-  }
-	
+function getGenresName (item) {
+ let genresName = []
+ for (let i = 0; i < item.length; i++) {
+   let value = classList[item[i]]
+   genresName.push(value)
+ }
+ return genresName.join(' ')
+}
   
-  
-  function filterDataByGenres(genresNumber) {
-    const genresId = Number(genresNumber)
-    console.log(genresId)
-	  searchBtn.addEventListener('click', event => {
-    let results = []
-    event.preventDefault()
-    const regex = new RegExp(searchInput.value, 'i')
 
-    results = data.filter(movie => movie.title.match(regex))
-    console.log(results)
-    getTotalPages(results)
-    getPageData(1, results)
-  })
-		
-      // 電影是否包含該類型
-      const isGenres = item.genres.some( item => { return item === genresId} )
-      return isGenres })
-    return result
-  }
-  
-  // hilight 所選的導覽項目
-  nav.addEventListener('click',() => {
-    // 先清除所有 active class
-    const navLinkArray = document.querySelectorAll('.nav-link')
-    navLinkArray.forEach( item => {
-      item.classList.remove('active')
-    })
-    // hilight 選項
-    event.target.classList.add('active')
-    // filter display
-    const genresId = event.target.dataset.id
-    const filterData = filterDataByGenres(genresId)
-    displayDataList(filterData)
-  })
 
   function showMovie (id) {
     // get elements
