@@ -75,6 +75,9 @@
       
       const filterAction = filterDataByGenres(1)
       displayDataList(filterAction)
+	      console.log(data)
+    getTotalPages (data)
+    getPageData(1, data)
     })
     .catch((err) => console.log(err))
 
