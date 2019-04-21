@@ -1,24 +1,17 @@
-* {
-	font-size: 14px;
-}
-.nav ul {
-display: flex!important;
-}
-.page-item:last-child .page-link {
-		font-family: arial!important;
-    margin-top: 15px!important;
-}
-.page-item:first-child .page-link {
-
-}
 #search-bar{
   float: left;
+}
+.card-title {
+  margin-bottom: -10px!important;
+}
+.page-item:last-child .page-link {
+    font-family: arial!important;
+    margin-top: 15px!important;
 }
 #menu-nav {
 	font-family: "Open Sans", "sans-serif";
 }
 .search {
-	width: 208px!important;
     font-size: 13px!important;
 }
 .input.search-input {
@@ -124,8 +117,7 @@ h5 {
     text-shadow: #000000 1px 1px 1px;
     font-family: Tahoma,Geneva,sans-serif;
     border-radius: 5px;
-	height: 40px;
-    padding: 10px!important;
+	  padding-top: 12px !important;
 }
 .lith {
 background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/KEy3NqP0sIU/s1600/AH.png") repeat scroll 0 0 rgba(0, 0, 0, 0)!important;
@@ -133,29 +125,8 @@ background: url("https://3.bp.blogspot.com/-VrKTRzEhiew/U2Q7b7gSmCI/AAAAAAAAFMc/
     margin: 3px;
     padding: 6px;
     position: absolute;
+    width: 40px;
+    height: 30px!important;
     top: 0px;
     text-shadow: 0px 0px 1px #999;
-	width: 40px;
-	height: 30px;
-}
-header h1 {
-  color: #fff;
-  text-align: center;
-  background-color: #007BFF;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.nav-item {
-  border: 1px solid #EEEEEE;
-  border-radius: 3px;
-}
-
-.nav-item a {
-  color: #000;  
-}
-
-.nav-item a:hover {
-  color: #000;
-  background-color: #EEEEEE;
 }
