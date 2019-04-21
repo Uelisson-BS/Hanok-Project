@@ -44,7 +44,6 @@
                   "18": "War",
                   "19": "Western"
                 }
-  let rawData = []
   
   // 顯示導覽列
   let navHTML = ``
