@@ -134,7 +134,6 @@
 	  	      console.log(data)
 	      getTotalPages (data)
     getPageData(1, data)
-      return isGenres
 	})
     return result
   }
