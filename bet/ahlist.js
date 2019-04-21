@@ -57,7 +57,7 @@
   nav.innerHTML = navHTML
   
 
-  axios.get(BASE_URL + '/Hanok-Project/bet/movies.json')
+  axios.get(INDEX_URL)
     .then((response) => {
      rawData = response.data.results
       // 預設 hilight Action
