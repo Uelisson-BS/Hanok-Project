@@ -106,14 +106,6 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
-  
-    // hilight 選項
-    event.target.classList.add('active')
-    // filter display
-    const genresId = event.target.dataset.id
-    const filterData = filterDataByGenres(genresId)
-    displayDataList(filterData)
-  })
 
   function showMovie (id) {
     // get elements
