@@ -9,7 +9,7 @@
   const searchInput = document.getElementById('search')
 
   const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 12
+  const ITEM_PER_PAGE = 8
   
   const listModel = document.getElementById("btn-listModel")
   const cardModel = document.getElementById("btn-cardModel")
@@ -83,6 +83,11 @@
 
     // send request to show api
     axios.get(url).then(response => {
+		var arr = [ 'a', 'b', 'c'];
+arr.push('d'); // insert as last item
+console.log(arr); // ['a', 'b', 'c', 'd']
+console.log(arr.pop()); // remove last item
+console.log(arr); // ['a', 'b', 'c'
       const data = response.data.results
       console.log(data)
 
@@ -181,5 +186,5 @@
       getPageData(event.target.dataset.page)
     }
   })
-  
 })()
+
