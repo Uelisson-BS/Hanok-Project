@@ -129,14 +129,14 @@
     const genresId = Number(genresNumber)
     console.log(genresId)
     const result = Data.filter( item => { 
- console.log(data)
-	 getTotalPages (data)
-    getPageData(1, data)
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres
 	})
     return result
+	   console.log(data)
+	 getTotalPages (data)
+    getPageData(1, data)
   }
   
   // hilight 所選的導覽項目
