@@ -20,7 +20,7 @@
   let page = 1
 
   const dataPanel = document.getElementById('data-panel')
-  const displayPanel = document.querySelector('.display-panel')
+
   const nav = document.querySelector('.nav')
   const genres = {
                   "1": "Action",
