@@ -107,13 +107,6 @@
     dataPanel.innerHTML = htmlContent
  }    
   
-  // hilight 所選的導覽項目
-  nav.addEventListener('click',() => {
-    // 先清除所有 active class
-    const navLinkArray = document.querySelectorAll('.nav-link')
-    navLinkArray.forEach( item => {
-      item.classList.remove('active')
-    })
     // hilight 選項
     event.target.classList.add('active')
     // filter display
