@@ -76,35 +76,22 @@
     const modalTitle = document.getElementById('show-movie-title')
     const modalImage = document.getElementById('show-movie-image')
     const modalDate = document.getElementById('show-movie-date')
-	const modalGenero = document.getElementById('show-movie-genero')
-	const modalFansub = document.getElementById('show-movie-fansub')
-	const modalQuality = document.getElementById('show-movie-quality')
-	const modalPage = document.getElementById('show-movie-page')
     const modalDescription = document.getElementById('show-movie-description')
 
     // set request url
-    const url = INDEX_URL2 + id + '.json'
+    const url = INDEX_URL + id
     console.log(url)
 
     // send request to show api
     axios.get(url).then(response => {
-		var arr = [ 'a', 'b', 'c'];
-arr.push('d'); // insert as last item
-console.log(arr); // ['a', 'b', 'c', 'd']
-console.log(arr.pop()); // remove last item
-console.log(arr); // ['a', 'b', 'c'
       const data = response.data.results
       console.log(data)
 
       // insert data into modal ui
-      modalTitle.textContent = data.titulo
+      modalTitle.textContent = data.title
       modalImage.innerHTML = `<img src="${POSTER_URL}${data.image}" class="img-fluid" alt="Responsive image">`
-      modalDate.textContent = `${data.ano}`
-	  modalGenero.textContent = `${data.genero}`
-	  modalFansub.textContent = `${data.fansub}`
-	  modalQuality.textContent = `${data.qualidade}`
-	  modalPage.innerHTML = `${data.page}`
-      modalDescription.textContent = `${data.sinopse}`
+      modalDate.textContent = `release at : ${data.release_date}`
+      modalDescription.textContent = `${data.description}`
     })
   }
 
