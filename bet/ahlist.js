@@ -128,10 +128,7 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = rawData.filter( item => { 
-				  console.log(results)
-    getTotalPages(results)
-    getPageData(1, results)
+    const result = data.push.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres
