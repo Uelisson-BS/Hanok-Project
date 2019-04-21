@@ -75,9 +75,6 @@
       
       const filterAction = filterDataByGenres(1)
       displayDataList(filterAction)
-    console.log(results)
-    getTotalPages(results)
-    getPageData(1, results)
     })
     .catch((err) => console.log(err))
 
@@ -131,18 +128,27 @@
     })
     return genresHTML
   }
+	
+  
   
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = rawData.filter( item => { 
+	  searchBtn.addEventListener('click', event => {
+    let results = []
+    event.preventDefault()
+    const regex = new RegExp(searchInput.value, 'i')
+
+    results = data.filter(movie => movie.title.match(regex))
+    console.log(results)
+    getTotalPages(results)
+    getPageData(1, results)
+  })
+		
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
       return isGenres })
     return result
-    console.log(data)
-    getTotalPages (data)
-    getPageData(1, data)
   }
   
   // hilight 所選的導覽項目
