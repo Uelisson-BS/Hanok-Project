@@ -45,16 +45,6 @@
                 }
   let rawData = []
 
-  
-  // 顯示導覽列
-  let navHTML = ``
-  for (item in genres) {
-    navHTML += `
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-id="${item}">${genres[item]}</a>
-      </li>
-    `  
-  }
 
 
   axios.get(INDEX_URL).then((response) => {
