@@ -68,9 +68,9 @@
   axios.get(INDEX_URL)
     .then((response) => {
      rawData = response.data.results
-    console.log(results)
-    getTotalPages(results)
-    getPageData(1, results)
+	   console.log(data)
+	   getTotalPages (data)
+    getPageData(1, data)
     })
     .catch((err) => console.log(err))
 
@@ -128,10 +128,10 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = rawData.filter( item => { 
+    const result = raw.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
-return result
+      return isGenres
 	})
     return result
   }
