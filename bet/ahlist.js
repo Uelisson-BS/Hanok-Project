@@ -134,9 +134,6 @@
       return isGenres
 	})
     return result
-	   console.log(data)
-	 getTotalPages (data)
-    getPageData(1, data)
   }
   
   // hilight 所選的導覽項目
