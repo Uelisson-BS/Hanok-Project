@@ -129,11 +129,11 @@
     const genresId = Number(genresNumber)
     console.log(genresId)
     const result = data.push.filter( item => { 
-	      console.log(data)
-	      getTotalPages (data)
-    getPageData(1, data)
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
+	  	      console.log(data)
+	      getTotalPages (data)
+    getPageData(1, data)
       return isGenres
 	})
     return result
