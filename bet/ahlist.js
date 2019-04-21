@@ -63,12 +63,20 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
-	        nav.firstElementChild
+  }).catch((err) => console.log(err))
+  
+	// 取得資料
+  axios.get(BASE_URL + '/Hanok-Project/bet/movies.json')
+    .then((response) => {
+     push = response.data.results
+      // 預設 hilight Action
+      nav.firstElementChild
           .firstElementChild.classList.add('active')
       
       const filterAction = filterDataByGenres(1)
-  }).catch((err) => console.log(err))
-  
+      displayDataList(filterAction)
+    })
+    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
