@@ -1,29 +1,5 @@
 (function () {
-  const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
-  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
-  const POSTER_URL = 'https://'
-  const dataPanel = document.querySelector('[data-movie-list]')
-  const data = []
-  let data = []
-
-  const searchBtn = document.getElementById('submit-search')
-  const searchInput = document.getElementById('search')
-
-  const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 8
-  
-  const listModel = document.getElementById("btn-listModel")
-  const cardModel = document.getElementById("btn-cardModel")
-  
-  // 設定一個判斷Model的Boolean
-  let isListModel = false
-  // 將頁數預設在第一頁
-  let page = 1
-
-  const dataPanel = document.getElementById('data-panel')
-  
-  const classification = document.querySelector('[data-alpha-pos="class"]')
+	 const classification = document.querySelector('[data-alpha-pos="class"]')
 const classList = {
   "1": "Action",
   "2": "Adventure",
@@ -45,6 +21,31 @@ const classList = {
   "18": "War",
   "19": "Western"
 }
+
+  const BASE_URL = 'https://uelisson-bs.github.io'
+  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
+  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
+  const POSTER_URL = 'https://'
+  const dataPanel = document.querySelector('[data-movie-list]')
+  let data = []
+  const data = []
+
+  const searchBtn = document.getElementById('submit-search')
+  const searchInput = document.getElementById('search')
+
+  const pagination = document.getElementById('pagination')
+  const ITEM_PER_PAGE = 8
+  
+  const listModel = document.getElementById("btn-listModel")
+  const cardModel = document.getElementById("btn-cardModel")
+  
+  // 設定一個判斷Model的Boolean
+  let isListModel = false
+  // 將頁數預設在第一頁
+  let page = 1
+
+  const dataPanel = document.getElementById('data-panel')
+  
 
 // 取分類資料
 for (let list in classList) {
@@ -78,7 +79,6 @@ axios.get(INDEX_URL)
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
-	displayDataList(data)
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
