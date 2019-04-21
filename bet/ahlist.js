@@ -68,7 +68,7 @@
 	// 取得資料
   axios.get(INDEX_URL)
     .then((response) => {
-      data.push(...response.data.results)
+      data.push = response.data.results
       // 預設 hilight Action
       nav.firstElementChild
           .firstElementChild.classList.add('active')
