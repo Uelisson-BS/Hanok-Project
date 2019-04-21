@@ -1,6 +1,9 @@
 #search-bar{
   float: left;
 }
+.modal-open {
+  padding: 0!important;
+}
 .card-title {
   margin-bottom: -10px!important;
 }
