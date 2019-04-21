@@ -68,6 +68,9 @@
   axios.get(INDEX_URL)
     .then((response) => {
      rawData = response.data.results
+	      console.log(data)
+	      getTotalPages (data)
+    getPageData(1, data)
       // 預設 hilight Action
       nav.firstElementChild
           .firstElementChild.classList.add('active')
