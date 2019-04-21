@@ -1,6 +1,6 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
+  const INDEX_URL = BASE_URL + '/Hanok-Project/assets/AH-List/db-list.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
@@ -63,13 +63,20 @@
     console.log(data)
     getTotalPages (data)
     getPageData(1, data)
-	   nav.firstElementChild
+  }).catch((err) => console.log(err))
+  
+	// 取得資料
+  axios.get(INDEX_URL)
+    .then((response) => {
+      rawData = response.data.results
+      // 預設 hilight Action
+      nav.firstElementChild
           .firstElementChild.classList.add('active')
       
       const filterAction = filterDataByGenres(1)
       displayMovies(filterAction)
-  }).catch((err) => console.log(err))
-  
+    })
+    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
