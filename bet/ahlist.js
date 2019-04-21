@@ -128,7 +128,7 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = rawData.filter( item => { 
+    const result = Data.filter( item => { 
  console.log(data)
 	 getTotalPages (data)
     getPageData(1, data)
