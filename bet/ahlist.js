@@ -1,7 +1,7 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
   const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
-  const INDEX_URL2 = BASE_URL + '/Hanok-Project/bet/'
+  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
 
@@ -20,6 +20,7 @@
   let page = 1
 
   const dataPanel = document.getElementById('data-panel')
+  
   const displayPanel = document.querySelector('.display-panel')
   const nav = document.querySelector('.nav')
   const genres = {
@@ -64,13 +65,16 @@
     getPageData(1, data)
   }).catch((err) => console.log(err))
   
-		// 取得資料
+	// 取得資料
   axios.get(INDEX_URL)
     .then((response) => {
-     rawData = response.data.results
-	      console.log(data)
-	      getTotalPages (data)
-    getPageData(1, data)
+      rawData = response.data.results
+      // 預設 hilight Action
+      nav.firstElementChild
+          .firstElementChild.classList.add('active')
+      
+      const filterAction = filterDataByGenres(1)
+      displayDataList(filterAction)
     })
     .catch((err) => console.log(err))
 
@@ -84,7 +88,7 @@
               <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
               <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.title}</h5>
+                <h6 class="card-title">${item.titulo}</h5>
               </div>
               <div class="card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
@@ -100,7 +104,7 @@
           <div class="container">
             <div class="row size">
               <div class="col-9">
-                <h5>${item.title}</h5>
+                <h5>${item.titulo}</h5>
               </div>
               <div class="col-3 card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
@@ -114,7 +118,7 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
-
+	
 	  function displayGenres(array) {
     let genresHTML = ``
     array.forEach(item => {
@@ -128,11 +132,10 @@
   function filterDataByGenres(genresNumber) {
     const genresId = Number(genresNumber)
     console.log(genresId)
-    const result = Data.filter( item => { 
+    const result = rawData.filter( item => { 
       // 電影是否包含該類型
       const isGenres = item.genres.some( item => { return item === genresId} )
-      return isGenres
-	})
+      return isGenres })
     return result
   }
   
@@ -150,12 +153,16 @@
     const filterData = filterDataByGenres(genresId)
     displayDataList(filterData)
   })
-	
+
   function showMovie (id) {
     // get elements
     const modalTitle = document.getElementById('show-movie-title')
     const modalImage = document.getElementById('show-movie-image')
     const modalDate = document.getElementById('show-movie-date')
+	const modalGenero = document.getElementById('show-movie-genero')
+	const modalFansub = document.getElementById('show-movie-fansub')
+	const modalQuality = document.getElementById('show-movie-quality')
+	const modalPage = document.getElementById('show-movie-page')
     const modalDescription = document.getElementById('show-movie-description')
 
     // set request url
@@ -164,14 +171,23 @@
 
     // send request to show api
     axios.get(url).then(response => {
+		var arr = [ 'a', 'b', 'c'];
+arr.push('d'); // insert as last item
+console.log(arr); // ['a', 'b', 'c', 'd']
+console.log(arr.pop()); // remove last item
+console.log(arr); // ['a', 'b', 'c'
       const data = response.data.results
       console.log(data)
 
       // insert data into modal ui
-      modalTitle.textContent = data.title
+      modalTitle.textContent = data.titulo
       modalImage.innerHTML = `<img src="${POSTER_URL}${data.image}" class="img-fluid" alt="Responsive image">`
-      modalDate.textContent = `release at : ${data.release_date}`
-      modalDescription.textContent = `${data.description}`
+      modalDate.textContent = `${data.ano}`
+	  modalGenero.textContent = `${data.genero}`
+	  modalFansub.textContent = `${data.fansub}`
+	  modalQuality.textContent = `${data.qualidade}`
+	  modalPage.innerHTML = `${data.page}`
+      modalDescription.textContent = `${data.sinopse}`
     })
   }
 
