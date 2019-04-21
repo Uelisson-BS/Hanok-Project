@@ -1,7 +1,7 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
   const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
-  const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
+  const INDEX_URL2 = BASE_URL + '/Hanok-Project/bet/'
   const POSTER_URL = 'https://'
   const data = []
 
@@ -18,8 +18,9 @@
   let isListModel = false
   // 將頁數預設在第一頁
   let page = 1
-  
+
   const dataPanel = document.getElementById('data-panel')
+  
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
@@ -27,7 +28,7 @@
     getTotalPages (data)
     getPageData(1, data)
   }).catch((err) => console.log(err))
-
+  
 
   function displayDataList (data) {
     let htmlContent = ''
@@ -39,7 +40,7 @@
               <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
               <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.titulo}</h5>
+                <h6 class="card-title">${item.title}</h5>
               </div>
               <div class="card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
@@ -55,7 +56,7 @@
           <div class="container">
             <div class="row size">
               <div class="col-9">
-                <h5>${item.titulo}</h5>
+                <h5>${item.title}</h5>
               </div>
               <div class="col-3 card-footer">
                 <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
