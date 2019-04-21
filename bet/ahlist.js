@@ -55,8 +55,7 @@
       </li>
     `  
   }
-  nav.innerHTML = navHTML
-  
+
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
