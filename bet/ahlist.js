@@ -4,7 +4,7 @@
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = 'https://'
   const data = []
-
+  
   const searchBtn = document.getElementById('submit-search')
   const searchInput = document.getElementById('search')
 
@@ -37,13 +37,14 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal">
+              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
+              <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.title}</h5>
+                <h6 class="card-title">${item.titulo}</h5>
               </div>
               <div class="card-footer">
-                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
-                <button class="btn btn-info btn-add-favorite" data-id="${item.id}">+</button>
+                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
+               <!--<button class="btn btn-primary btn-add-favorite" data-id="${item.id}">+</button>-->
               </div>
             </div>
           </div>
@@ -55,12 +56,12 @@
           <div class="container">
             <div class="row size">
               <div class="col-9">
-                <h5>${item.title}</h5>
+                <h5>${item.titulo}</h5>
               </div>
               <div class="col-3 card-footer">
-                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
-                <!-- favorite button --> 
-                <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>
+                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
+                <!-- favorite button btn-primary --> 
+               <!-- <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>--> 
               </div>
             </div>
           </div>
