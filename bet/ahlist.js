@@ -2,7 +2,7 @@
   const BASE_URL = 'https://uelisson-bs.github.io'
   const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
-  const POSTER_URL = 'https://'
+  const POSTER_URL = ''
   const data = []
 
   const searchBtn = document.getElementById('submit-search')
