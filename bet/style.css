@@ -7,7 +7,7 @@
 .card-title {
   margin-bottom: -10px!important;
 }
-.page-item:last-child .page-link {
+.pagination {
     font-family: arial!important;
     margin-top: 15px!important;
 }
