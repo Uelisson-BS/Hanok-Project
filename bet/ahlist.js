@@ -37,7 +37,7 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal">
+              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">
               <div class="card-body movie-item-body ">
                 <h6 class="card-title">${item.title}</h5>
               </div>
@@ -53,7 +53,7 @@
       data.forEach(function (item, index) {
         htmlContent += `
           <div class="container">
-            <div class="row size"  data-toggle="modal" data-target="#show-movie-modal">
+            <div class="row size"  data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">
               <div class="col-9">
                 <h5>${item.title}</h5>
               </div>
