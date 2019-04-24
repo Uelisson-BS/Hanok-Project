@@ -1,5 +1,5 @@
 (function(){const BASE_URL='https://uelisson-bs.github.io'
-const INDEX_URL=BASE_URL+'/Hanok-Project/assets/AH-List/db-list.json'
+const INDEX_URL=BASE_URL+'/Hanok-Project/assets/AH-List/db3-list.json'
 const INDEX_URL2=BASE_URL+'/Hanok-Project/assets/AH-List/Post3-id/'
 const POSTER_URL=''
 const data=[]
@@ -20,7 +20,7 @@ function displayDataList(data){let htmlContent=''
 if(isListModel===!1){data.forEach(function(item,index){htmlContent+=`
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal">
+              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
               <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
                 <h6 class="card-title">${item.titulo}</h5>
@@ -33,7 +33,7 @@ if(isListModel===!1){data.forEach(function(item,index){htmlContent+=`
           </div>
         `})}else if(isListModel===!0){data.forEach(function(item,index){htmlContent+=`
           <div class="container">
-            <div class="row size" data-toggle="modal" data-target="#show-movie-modal">
+            <div class="row size">
               <div class="col-9">
                 <h5>${item.titulo}</h5>
               </div>
