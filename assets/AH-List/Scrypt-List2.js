@@ -1,5 +1,5 @@
 (function(){const BASE_URL='https://uelisson-bs.github.io'
-const INDEX_URL=BASE_URL+'/Hanok-Project/assets/AH-List/db-list.json'
+const INDEX_URL=BASE_URL+'/Hanok-Project/assets/AH-List/db2-list.json'
 const INDEX_URL2=BASE_URL+'/Hanok-Project/assets/AH-List/Post2-id/'
 const POSTER_URL=''
 const data=[]
