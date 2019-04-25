@@ -4,6 +4,7 @@
 .modal-open {
   padding: 0!important;
 }
+img:hover {opacity:1;} 
 .card-title {
   margin-bottom: -10px!important;
 }
