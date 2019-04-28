@@ -20,8 +20,8 @@ function displayDataList(data){let htmlContent=''
 if(isListModel===!1){data.forEach(function(item,index){htmlContent+=`
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
-              <img class="lith" src="${POSTER_URL}${item.image2}">
+              <img class="card-img-top" src="${POSTER_URL}${item.imagem}" alt="Card image cap">
+              <img class="lith" src="${POSTER_URL}${item.imagem2}">
               <div class="card-body movie-item-body ">
                 <h6 class="card-title">${item.titulo}</h5>
               </div>
@@ -47,7 +47,7 @@ if(isListModel===!1){data.forEach(function(item,index){htmlContent+=`
       `})}
 dataPanel.innerHTML=htmlContent}
 function showMovie(id){const modalTitle=document.getElementById('show-movie-title')
-const modalImage=document.getElementById('show-movie-image')
+const modalImagem=document.getElementById('show-movie-image')
 const modalDate=document.getElementById('show-movie-date')
 const modalGenero=document.getElementById('show-movie-genero')
 const modalFansub=document.getElementById('show-movie-fansub')
@@ -59,7 +59,7 @@ console.log(url)
 axios.get(url).then(response=>{var arr=['a','b','c'];arr.push('d');console.log(arr);console.log(arr.pop());console.log(arr);const data=response.data.results
 console.log(data)
 modalTitle.textContent=data.titulo
-modalImage.innerHTML=`<img src="${POSTER_URL}${data.image}" class="img-fluid" alt="Responsive image">`
+modalImagem.innerHTML=`<img src="${POSTER_URL}${data.imagem}" class="img-fluid" alt="Responsive image">`
 modalDate.textContent=`${data.ano}`
 modalGenero.textContent=`${data.genero}`
 modalFansub.textContent=`${data.fansub}`
