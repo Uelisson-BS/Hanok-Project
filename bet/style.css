@@ -25,8 +25,8 @@ ol, ul {
     margin: 0!important;
     padding: 0!important;
 }
-#post-wrapper {margin:auto;float:none;width: 1000px;}
-#outer-wrapper {width: 1100px;}
+#post-wrapper {margin:auto;float:none;}
+#outer-wrapper {width: 1000px;}
 #sidebar-wrapper {visibility: hidden; display: none;}
 .post_comments {font-size: 100%;}
 .hvr-grow a:after {
