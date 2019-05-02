@@ -25,10 +25,7 @@ ol, ul {
     margin: 0!important;
     padding: 0!important;
 }
-#post-wrapper {margin:auto;float:none;}
-#outer-wrapper {width: 1000px;}
 #sidebar-wrapper {display: none;}
-.post_comments {font-size: 100%;}
 .hvr-grow a:after {
     content: url(https://1.bp.blogspot.com/-84dciWHLOv8/XLjfWj2fdHI/AAAAAAAAN6g/Rq4xIRwAmaAlspvunHztB5pm37s2oyk8wCLcBGAs/s1600/icon-plus.png);
 	float: left;
