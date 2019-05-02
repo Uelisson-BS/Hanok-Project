@@ -43,16 +43,12 @@ modalDescription.textContent=`${data.sinopse}`})}
 function getTotalPages(data){let totalPages=Math.ceil(data.length/ITEM_PER_PAGE)||1
 let pageItemContent=''
 for(let i=0;i<totalPages;i++){pageItemContent+=`
-        <li class="page-item">
-          <a class="page-link" href="javascript:;" data-page="${i + 1}">${i + 1}</a>
-        </li>
-      `}
+<li class="page-item"><a class="page-link" href="javascript:;" data-page="${i + 1}">${i + 1}</a></li>`}
 pagination.innerHTML=pageItemContent}
 let paginationData=[]
 function getPageData(pageNum,data){paginationData=data||paginationData
 let offset=(pageNum-1)*ITEM_PER_PAGE
 let pageData=paginationData.slice(offset,offset+ITEM_PER_PAGE)
-
 console.log(pageData)
 displayDataList(pageData)}
 function addFavoriteItem(id){const list=JSON.parse(localStorage.getItem("favoriteMovies"))||[];const movie=data.find(item=>item.id===Number(id));if(list.some(item=>item.id===Number(id))){alert(`${movie.title} is already in your favorite list.`)}else{list.push(movie);alert(`Added ${movie.title} to your favorite list!`)}
