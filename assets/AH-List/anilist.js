@@ -43,10 +43,7 @@ modalDescription.textContent=`${data.sinopse}`})}
 function getTotalPages(data){let totalPages=Math.ceil(data.length/ITEM_PER_PAGE)||1
 let pageItemContent=''
 for(let i=0;i<totalPages;i++){pageItemContent+=`
-        <li class="page-item">
-          <a class="page-link" href="javascript:;" data-page="${i + 1}">${i + 1}</a>
-        </li>
-      `}
+<li class="page-item"><a class="page-link" href="javascript:;" data-page="${i + 1}">${i + 1}</a></li>`}
 pagination.innerHTML=pageItemContent}
 let paginationData=[]
 function getPageData(pageNum,data){paginationData=data||paginationData
