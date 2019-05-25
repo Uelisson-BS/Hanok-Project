@@ -9,7 +9,7 @@
   const searchInput = document.getElementById('search')
 
   const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 12
+  const ITEM_PER_PAGE = 8
   
   const listModel = document.getElementById("btn-listModel")
   const cardModel = document.getElementById("btn-cardModel")
@@ -21,6 +21,42 @@
 
   const dataPanel = document.getElementById('data-panel')
   
+  const displayPanel = document.querySelector('.display-panel')
+  const nav = document.querySelector('.nav')
+  const genres = {
+                  "1": "Action",
+                  "2": "Adventure",
+                  "3": "Animation",
+                  "4": "Comedy",
+                  "5": "Crime",
+                  "6": "Documentary",
+                  "7": "Drama",
+                  "8": "Family",
+                  "9": "Fantasy",
+                  "10": "History",
+                  "11": "Horror",
+                  "12": "Music",
+                  "13": "Mystery",
+                  "14": "Romance",
+                  "15": "Science Fiction",
+                  "16": "TV Movie",
+                  "17": "Thriller",
+                  "18": "War",
+                  "19": "Western"
+                }
+  let rawData = []
+  
+  // 顯示導覽列
+  let navHTML = ``
+  for (item in genres) {
+    navHTML += `
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-id="${item}">${genres[item]}</a>
+      </li>
+    `  
+  }
+  nav.innerHTML = navHTML
+  
 
   axios.get(INDEX_URL).then((response) => {
     data.push(...response.data.results)
@@ -29,6 +65,18 @@
     getPageData(1, data)
   }).catch((err) => console.log(err))
   
+	// 取得資料
+  axios.get(BASE_URL + '/Hanok-Project/bet/movies.json')
+    .then((response) => {
+     rawData = response.data.results
+      // 預設 hilight Action
+      nav.firstElementChild
+          .firstElementChild.classList.add('active')
+      
+      const filterAction = filterDataByGenres(1)
+      displayDataList(filterAction)
+    })
+    .catch((err) => console.log(err))
 
   function displayDataList (data) {
     let htmlContent = ''
@@ -37,13 +85,14 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal">
+              <img class="card-img-top" src="${POSTER_URL}${item.image}" alt="Card image cap">
+              <img class="lith" src="${POSTER_URL}${item.image2}">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.title}</h5>
+                <h6 class="card-title">${item.titulo}</h5>
               </div>
               <div class="card-footer">
-            <!--    <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>-->
-              <!--  <button class="btn btn-info btn-add-favorite" data-id="${item.id}">+</button>-->
+                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
+               <!--<button class="btn btn-primary btn-add-favorite" data-id="${item.id}">+</button>-->
               </div>
             </div>
           </div>
@@ -53,14 +102,14 @@
       data.forEach(function (item, index) {
         htmlContent += `
           <div class="container">
-            <div class="row size"  data-toggle="modal" data-target="#show-movie-modal">
+            <div class="row size">
               <div class="col-9">
-                <h5>${item.title}</h5>
+                <h5>${item.titulo}</h5>
               </div>
               <div class="col-3 card-footer">
-                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
-                <!-- favorite button --> 
-                <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>
+                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
+                <!-- favorite button btn-primary --> 
+               <!-- <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>--> 
               </div>
             </div>
           </div>
@@ -69,12 +118,51 @@
    }
     dataPanel.innerHTML = htmlContent
  }    
+	
+	  function displayGenres(array) {
+    let genresHTML = ``
+    array.forEach(item => {
+      genresHTML += `
+        <span class="badge badge-secondary">${genres[item]}</span>
+      `
+    })
+    return genresHTML
+  }
+  
+  function filterDataByGenres(genresNumber) {
+    const genresId = Number(genresNumber)
+    console.log(genresId)
+    const result = rawData.filter( item => { 
+      // 電影是否包含該類型
+      const isGenres = item.genres.some( item => { return item === genresId} )
+      return isGenres })
+    return result
+  }
+  
+  // hilight 所選的導覽項目
+  nav.addEventListener('click',() => {
+    // 先清除所有 active class
+    const navLinkArray = document.querySelectorAll('.nav-link')
+    navLinkArray.forEach( item => {
+      item.classList.remove('active')
+    })
+    // hilight 選項
+    event.target.classList.add('active')
+    // filter display
+    const genresId = event.target.dataset.id
+    const filterData = filterDataByGenres(genresId)
+    displayDataList(filterData)
+  })
 
   function showMovie (id) {
     // get elements
     const modalTitle = document.getElementById('show-movie-title')
     const modalImage = document.getElementById('show-movie-image')
     const modalDate = document.getElementById('show-movie-date')
+	const modalGenero = document.getElementById('show-movie-genero')
+	const modalFansub = document.getElementById('show-movie-fansub')
+	const modalQuality = document.getElementById('show-movie-quality')
+	const modalPage = document.getElementById('show-movie-page')
     const modalDescription = document.getElementById('show-movie-description')
 
     // set request url
@@ -83,14 +171,23 @@
 
     // send request to show api
     axios.get(url).then(response => {
+		var arr = [ 'a', 'b', 'c'];
+arr.push('d'); // insert as last item
+console.log(arr); // ['a', 'b', 'c', 'd']
+console.log(arr.pop()); // remove last item
+console.log(arr); // ['a', 'b', 'c'
       const data = response.data.results
       console.log(data)
 
       // insert data into modal ui
-      modalTitle.textContent = data.title
+      modalTitle.textContent = data.titulo
       modalImage.innerHTML = `<img src="${POSTER_URL}${data.image}" class="img-fluid" alt="Responsive image">`
-      modalDate.textContent = `release at : ${data.release_date}`
-      modalDescription.textContent = `${data.description}`
+      modalDate.textContent = `${data.ano}`
+	  modalGenero.textContent = `${data.genero}`
+	  modalFansub.textContent = `${data.fansub}`
+	  modalQuality.textContent = `${data.qualidade}`
+	  modalPage.innerHTML = `${data.page}`
+      modalDescription.textContent = `${data.sinopse}`
     })
   }
 
@@ -181,5 +278,4 @@
       getPageData(event.target.dataset.page)
     }
   })
-  
 })()
