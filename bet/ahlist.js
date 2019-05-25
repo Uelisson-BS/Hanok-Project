@@ -1,6 +1,6 @@
 (function () {
   const BASE_URL = 'https://uelisson-bs.github.io'
-  const INDEX_URL = BASE_URL + '/Hanok-Project/bet/movies.json'
+  const INDEX_URL = BASE_URL + '/Hanok-Project/assets/AH-List/db-list.json'
   const INDEX_URL2 = BASE_URL + '/Hanok-Project/assets/AH-List/Post-id/'
   const POSTER_URL = ''
   const data = []
@@ -9,7 +9,7 @@
   const searchInput = document.getElementById('search')
 
   const pagination = document.getElementById('pagination')
-  const ITEM_PER_PAGE = 12
+  const ITEM_PER_PAGE = 8
   
   const listModel = document.getElementById("btn-listModel")
   const cardModel = document.getElementById("btn-cardModel")
@@ -37,13 +37,14 @@
         htmlContent += `
           <div class="col-sm-3">
             <div class="card mb-2 size">
-              <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">
+              <img class="card-img-top" src="${POSTER_URL}${item.imagem}" alt="Card image cap">
+              <img class="lith" src="${POSTER_URL}${item.imagem2}">
               <div class="card-body movie-item-body ">
-                <h6 class="card-title">${item.title}</h5>
+                <h6 class="card-title">${item.titulo}</h5>
               </div>
               <div class="card-footer">
-<button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
-              <!--  <button class="btn btn-info btn-add-favorite" data-id="${item.id}">+</button>-->
+                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
+               <!--<button class="btn btn-primary btn-add-favorite" data-id="${item.id}">+</button>-->
               </div>
             </div>
           </div>
@@ -53,14 +54,14 @@
       data.forEach(function (item, index) {
         htmlContent += `
           <div class="container">
-            <div class="row size"  data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">
+            <div class="row size">
               <div class="col-9">
-                <h5>${item.title}</h5>
+                <h5>${item.titulo}</h5>
               </div>
               <div class="col-3 card-footer">
-                <button class="btn btn-primary btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">More</button>
-                <!-- favorite button --> 
-                <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>
+                <button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button>
+                <!-- favorite button btn-primary --> 
+               <!-- <button class = "btn btn-info btn-add-favorite" data-id ="${item.id}" > + </button>--> 
               </div>
             </div>
           </div>
@@ -73,8 +74,12 @@
   function showMovie (id) {
     // get elements
     const modalTitle = document.getElementById('show-movie-title')
-    const modalImage = document.getElementById('show-movie-image')
+    const modalImagem = document.getElementById('show-movie-image')
     const modalDate = document.getElementById('show-movie-date')
+	const modalGenero = document.getElementById('show-movie-genero')
+	const modalFansub = document.getElementById('show-movie-fansub')
+	const modalQuality = document.getElementById('show-movie-quality')
+	const modalPage = document.getElementById('show-movie-page')
     const modalDescription = document.getElementById('show-movie-description')
 
     // set request url
@@ -83,14 +88,23 @@
 
     // send request to show api
     axios.get(url).then(response => {
+		var arr = [ 'a', 'b', 'c'];
+arr.push('d'); // insert as last item
+console.log(arr); // ['a', 'b', 'c', 'd']
+console.log(arr.pop()); // remove last item
+console.log(arr); // ['a', 'b', 'c'
       const data = response.data.results
       console.log(data)
 
       // insert data into modal ui
-      modalTitle.textContent = data.title
-      modalImage.innerHTML = `<img src="${POSTER_URL}${data.image}" class="img-fluid" alt="Responsive image">`
-      modalDate.textContent = `release at : ${data.release_date}`
-      modalDescription.textContent = `${data.description}`
+      modalTitle.textContent = data.titulo
+      modalImagem.innerHTML = `<img src="${POSTER_URL}${data.imagem}" class="img-fluid" alt="Responsive image">`
+      modalDate.textContent = `${data.ano}`
+	  modalGenero.textContent = `${data.genero}`
+	  modalFansub.textContent = `${data.fansub}`
+	  modalQuality.textContent = `${data.qualidade}`
+	  modalPage.innerHTML = `${data.page}`
+      modalDescription.textContent = `${data.sinopse}`
     })
   }
 
@@ -181,5 +195,4 @@
       getPageData(event.target.dataset.page)
     }
   })
-  
 })()
