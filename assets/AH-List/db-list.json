@@ -1,22 +1,586 @@
 {
 	"results": [
 		{
-			"id": 1,
-			"titulo": "Jurassic World: Fallen Kingdom",
-			"image": "test.jpg",
-			"image2": "test.jpg"
+			"id": "6613E38F",
+			"titulo": "07-Ghost",
+			"imagem": "https://4.bp.blogspot.com/-HJHNPJK7dXE/XMjAFF0c8UI/AAAAAAAAOAE/SpS0UZMvva8io5mExzU9HchzPXjL-LkxgCLcBGAs/s1600/07-Ghost.jpg",
+			"image2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
 		},
 		{
-			"id": 2,
-			"titulo": "Ant-Man and the Wasp",
-			"image": "4.bp.blogspot.com/-cmPoxdJ8W3o/W7mWIv1jvDI/AAAAAAAANP0/zVE3T5nEzvgY3AtVAUQ0k5qlCL8O58yVwCLcBGAs/s1600/Mahoutsukai-no-Yome-Hoshi-Matsu-Hito.jpg",
-			"image2": "https://3.bp.blogspot.com/-VdqIA4J0sZI/Vum_RU-E7KI/AAAAAAAAJdU/YCon5IBMIVE2Yp4hANdB2TBtGkpQDXz_Q/s1600/Blu-Ray.png"
+			"id": "9387F826",
+			"titulo": "3-gatsu no Lion",
+			"imagem": "https://2.bp.blogspot.com/-uGkHpEe5WCE/XMiaSPnJlHI/AAAAAAAAN_4/z2WGPVk-5fUYLtEoAxigdKd6G6S2v8I1QCLcBGAs/s1600/3-gatsu-no-Lion.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
 		},
 		{
-			"id": 222,
-			"titulo": "Ant-Man and the Wasp2",
-			"image": "4.bp.blogspot.com/-cmPoxdJ8W3o/W7mWIv1jvDI/AAAAAAAANP0/zVE3T5nEzvgY3AtVAUQ0k5qlCL8O58yVwCLcBGAs/s1600/Mahoutsukai-no-Yome-Hoshi-Matsu-Hito.jpg",
-			"image2": "https://4.bp.blogspot.com/-O9Pbqa25p6c/Vum_RK6nzZI/AAAAAAAAJdQ/QGbrF3cbyWUymz6cqPKNWexYJivkrRg2g/s1600/DVD.png"
-		}		
+			"id": "FDC73542",
+			"titulo": "3-gatsu no Lion 2nd",
+			"imagem": "https://4.bp.blogspot.com/-GUaBM2owF3Q/XMjBHLcCWwI/AAAAAAAAOAM/4O3QP9cagjYASvsOopLiQ1tV5WrGD8ZcwCLcBGAs/s1600/3-Gatsu-no-Lion-2nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.pngqualidade"
+		},
+		{
+			"id": "3FC41510",
+			"titulo": "Air Gear",
+			"imagem": "https://3.bp.blogspot.com/-2Vs2TYT_8yo/XMjDIjQGZwI/AAAAAAAAOAY/2zo_qmKoxjAUQtIFR2jli9pqSlWcsL_nwCLcBGAs/s1600/Air-Gear.jpg",
+			"imagem2": "https://3.bp.blogspot.com/-qQzrDklRf70/XMs_9ShVIiI/AAAAAAAAODI/0nkBr-Fn_MItXR_pqjvbTGNOFspupVQDQCLcBGAs/s1600/DVD.png"
+		},
+		{
+			"id": "0DD8B50E",
+			"titulo": "Angel Beats!",
+			"imagem": "https://4.bp.blogspot.com/-asLL68UMKqg/XMjEzhEJ_EI/AAAAAAAAOAk/FR2EcP07X18VtODnHESAyTXxtC27PV0sACLcBGAs/s1600/Angel-Beats.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "0E00D4EE",
+			"titulo": "Ao no Exorcist: Kyoto Fujouou-Hen",
+			"imagem": "https://2.bp.blogspot.com/-Ob13dFceJPg/XMjJX-CkG4I/AAAAAAAAOA8/fED2uQ3hJgIYP6glG-hfeMreUy846r1dwCLcBGAs/s1600/Ao-no-Exorcist-Kyoto-Fujouou-Hen.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "54792DFA",
+			"titulo": "Ballroom e Youkoso",
+			"imagem": "https://3.bp.blogspot.com/-cLEv5y3z21M/XMjKe-7febI/AAAAAAAAOBE/0koAou5EM1MMYfVwdMMHt2rNhxv9NvtvACLcBGAs/s1600/Ballroom-e-Youkoso.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "A5E596E2",
+			"titulo": "Ben-To",
+			"imagem": "https://4.bp.blogspot.com/-3JyG0K1QP8A/XMjMawmeXYI/AAAAAAAAOBQ/2_023LwKN8owRfmwb0tc2omIwAtHtj12QCLcBGAs/s1600/Ben-To.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "2A330001",
+			"titulo": "Big Order",
+			"imagem": "https://3.bp.blogspot.com/-mVuI9WVZmr8/XMjNrxMmwwI/AAAAAAAAOBY/O9F2oJyAStIe7DSGTwXRbACfn2aj6abAwCLcBGAs/s1600/Big-Order.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "E22FCC80",
+			"titulo": "Bleach",
+			"imagem": "https://4.bp.blogspot.com/-GGMCTCjR6lQ/XMjPwhnWcnI/AAAAAAAAOBk/Lk2g-TKk2F8Jn99NvU5HF79hg7cPPf_VwCLcBGAs/s1600/bleach.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "341BEAFB",
+			"titulo": "Boku dake ga Inai Machi",
+			"imagem": "https://2.bp.blogspot.com/-XmgY6HoKJzk/XMs0jgYrCtI/AAAAAAAAOCc/QAJJYWNO3MQabvgaBzznCWzu2zUOQYmRQCLcBGAs/s1600/Boku-dake-ga-Inai-Machi.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "9B97FEF1",
+			"titulo": "Boku wa Tomodachi ga Sukunai",
+			"imagem": "https://1.bp.blogspot.com/-Epo3EmFI2wQ/XMs4D4DR4kI/AAAAAAAAOCs/PbgxAKCsMSI89czEZKCzo7l6yMkgkwKjgCLcBGAs/s1600/Boku-wa-Tomodachi-ga-Sukunai.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "493CA36C",
+			"titulo": "Boku wa Tomodachi ga Sukunai NEXT",
+			"imagem": "https://1.bp.blogspot.com/-m382c8dP7DA/XMs4DfvMxdI/AAAAAAAAOCo/An1Q2uojp4ErZ7O60fUx_edRPHipWWxeACLcBGAs/s1600/Boku-wa-Tomodachi-ga-Sukunai-Next.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "DE518E52",
+			"titulo": "Buddy Complex",
+			"imagem": "https://2.bp.blogspot.com/-8QTc8zvrO_4/XMs9ubr94bI/AAAAAAAAOC8/Xu2sInCXM4427JIW3Am-bdO95Sbz4R_QwCLcBGAs/s1600/Buddy-Complex.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "0838D138",
+			"titulo": "Campione!",
+			"imagem": "https://2.bp.blogspot.com/-4Ss33nQ_QCw/XMtEOWqsOoI/AAAAAAAAODk/A9HRPZ7PX9YeCn1ev7wabEmwRfDiyo6-gCLcBGAs/s1600/Campione.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "ACAD56DA",
+			"titulo": "Cardcaptor Sakura: Clear Card",
+			"imagem": "https://4.bp.blogspot.com/-_UgoA0NiBic/XMtpYfvfQQI/AAAAAAAAODw/DYw-fnQJkV4S96JssRuaH-llc8aS9_zbgCLcBGAs/s1600/Cardcaptor-Sakura-%2BClear-Card-hen.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "17FAD79A",
+			"titulo": "Charlotte",
+			"imagem": "https://3.bp.blogspot.com/-Xr6CK2Z8now/XMtqoO2K3jI/AAAAAAAAOD4/YJUQPsw0CgMlErnBe8EUldXU2TADwOPLgCLcBGAs/s1600/Charlotte.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "615C44EA",
+			"titulo": "Clannad",
+			"imagem": "https://4.bp.blogspot.com/-zKOTe3dRGN0/XMtsnZo6OlI/AAAAAAAAOEE/V9X8-nQpzjw7k5mQywG4po5QODRYcTkjwCLcBGAs/s1600/Clannad.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "246593BC",
+			"titulo": "Claymore",
+			"imagem": "https://3.bp.blogspot.com/-TkJWRbJdcdY/XMtubEX2wYI/AAAAAAAAOEQ/0UDQ6SMe098Msq4vVKTj3c8M494vyo5rwCLcBGAs/s1600/Claymore.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "EA6BB127",
+			"titulo": "D.Gray-Man",
+			"imagem": "https://3.bp.blogspot.com/-TPOzhv-PBiY/XMt19nNJ5cI/AAAAAAAAOEc/r9h_eXuXxpclk5eymJOBrj3vMBuVNf9cACLcBGAs/s1600/D-Gray-Man.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "DE8B47BC",
+			"titulo": "D.Gray-man Hallow",
+			"imagem": "https://3.bp.blogspot.com/-l2B4uwCdJDw/XMt1-bpZGyI/AAAAAAAAOEg/lRgfvhpWvUwrS40ixlrOSJn94MyAUylFACLcBGAs/s1600/D-Gray-man-Hallow.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "BF26E4C2",
+			"titulo": "Date a Live",
+			"imagem": "https://2.bp.blogspot.com/-JyhGuuYhrs0/XM8nqjJ0fpI/AAAAAAAAOE8/LWrHadFGu2cQSK1IQXrirPbHNL5DjN7sgCLcBGAs/s1600/Date-a-Live.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "86B93F91",
+			"titulo": "Date a Live II",
+			"imagem": "https://2.bp.blogspot.com/-NouxS2ChucE/XMC7iZTY8MI/AAAAAAAAN8E/c_6BmOV1s1Y5URebOqtIELlQUujjX6NDQCLcBGAs/s1600/date-a-live-II.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "5DC64F35",
+			"titulo": "Date A Live Ⅲ",
+			"imagem": "https://2.bp.blogspot.com/-6nVXmK7D1K8/XEVDl2nWBdI/AAAAAAAANkU/pDOQ6inGnDMpQcV6Lxu5wWulBYfFFiO3QCLcBGAs/s1600/date-a-live-III.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "5E889A36",
+			"titulo": "Days",
+			"imagem": "https://4.bp.blogspot.com/-mf7B18NdA0Q/XM8u6eZqlHI/AAAAAAAAOFI/vBckq3EM7yg6DALZ5aTjoRaGwWR85yfmwCLcBGAs/s1600/Days.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "2449B229",
+			"titulo": "Deadman Wonderland",
+			"imagem": "https://3.bp.blogspot.com/-L7nBp1dCBDg/XM81oVJXmPI/AAAAAAAAOFU/p2jAUej-HGsFtWcpZT57jwQqxrUaTJv5ACLcBGAs/s1600/Deadman-Wonderland.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "4C61EA67",
+			"titulo": "Death Parade",
+			"imagem": "https://3.bp.blogspot.com/-VcFadu7izkM/XM829kAxB9I/AAAAAAAAOFg/XHIeh0c5cPkQ8_v5tTx-Vc7FpLAVqmY-wCLcBGAs/s1600/Death-Parade.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "6BC3DB44",
+			"titulo": "Devil May Cry",
+			"imagem": "https://1.bp.blogspot.com/-l6OiYzFGHNs/XM84fF-FEXI/AAAAAAAAOFw/TYLyQEyU6fADFiVP5rw9YStIJwdkknCZgCLcBGAs/s1600/Devil-May-Cry.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "D910C790",
+			"titulo": "Dragon Ball Super",
+			"imagem": "https://3.bp.blogspot.com/-DyPTIw3d7-U/XM85u8hq0rI/AAAAAAAAOF8/khftL8k1nroNyRyhdZaCkkyU6FwzlxebgCLcBGAs/s1600/Dragon-Ball-Super.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "1EE29FDB",
+			"titulo": "Dragon Crisis!",
+			"imagem": "https://2.bp.blogspot.com/-7m5UkLIX2xc/XM87NLB5IkI/AAAAAAAAOGI/zsihDZ1tWZgPBWLd5tnTfUqoDQa3b7NRACLcBGAs/s1600/Dragon-Crisis.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "E027E818",
+			"titulo": "Elfen Lied",
+			"imagem": "https://4.bp.blogspot.com/-0xQl1wDRQWY/XNDP3S0F96I/AAAAAAAAOGU/PqooRvDOX9UAxak7yVtf8LCYAzZ6Q-raACLcBGAs/s1600/Elfen-Lied.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "4BC7E112",
+			"titulo": "Fairy Tail",
+			"imagem": "https://1.bp.blogspot.com/-Cymhd_vTdpY/XNDSopP1VVI/AAAAAAAAOGk/SXYO8PkDOGE6CPsyRZPCylEW34RPN66SQCLcBGAs/s1600/Fairy-Tail.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "6C5CB0B7",
+			"titulo": "Fairy Tail 2",
+			"imagem": "https://4.bp.blogspot.com/-gWObWVIST0Q/XNDSnUVxPSI/AAAAAAAAOGg/rO4M1IuupWsAF_qroBPL1GmZgpHpACg_ACLcBGAs/s1600/Fairy-Tail-2.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "E931795D",
+			"titulo": "Fairy Tail 2018",
+			"imagem": "https://1.bp.blogspot.com/-GLI-xyjV2F4/XOm4CjFBrBI/AAAAAAAAOWM/_pyZDOs6rzkjTpw02z6oqq1h9e7rGzLlQCLcBGAs/s1600/Fairy-Tail-Final-Series.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "25A08CF1",
+			"titulo": "Fate/Apocrypha",
+			"imagem": "https://3.bp.blogspot.com/-ZjoiycZ22Ms/XNDUuakxp2I/AAAAAAAAOG0/05VN16I-_5sNXSgBUz_iZetRZsslE85ZACLcBGAs/s1600/Fate-Apocrypha.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "017415BF",
+			"titulo": "Fortune Arterial: Akai Yakusoku",
+			"imagem": "https://4.bp.blogspot.com/-D3kfgjX1I5E/XNDV1XUxvII/AAAAAAAAOG8/4YA9QBFwhg85lMK4XC45ko0tfi7A6RQcQCLcBGAs/s1600/Fortune-Arterial.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "42AF3B46",
+			"titulo": "Fruits Basket 2019",
+			"imagem": "https://1.bp.blogspot.com/-LUlWbWBdxTk/XOB1vyxCWzI/AAAAAAAAONg/7soapQNXDW8W1SaJA7AUjDhsUv6_ZgCJgCLcBGAs/s1600/Fruits-Basket-2019.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "3076BC92",
+			"titulo": "Gakusen Toshi Asterisk",
+			"imagem": "https://4.bp.blogspot.com/-a3iDMy7Nyfg/XN2Tc2A8uLI/AAAAAAAAOIo/TkVdV1E1Q8k67MBhvXjhsCM3VFO2kbgNgCLcBGAs/s1600/Gakusen-Toshi-Asterisk.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "52122B9E",
+			"titulo": "Gakusen Toshi Asterisk 2nd",
+			"imagem": "https://4.bp.blogspot.com/-WX5ucbrhFAU/XN2TdPrXP1I/AAAAAAAAOIs/YJ0YmcTxGPoU7Xl3K6xTuf2Cakec2iehACLcBGAs/s1600/Gakusen-Toshi-Asterisk-2nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "BBFC51D6",
+			"titulo": "Goblin Slayer",
+			"imagem": "https://3.bp.blogspot.com/-lpgTC2MCOu0/W9dmliT1nKI/AAAAAAAANVo/vn2yzqfzPhIedRQRuWIq-ganiulaAR1egCLcBGAs/s1600/Goblin-Slayer.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "B57B3FD3",
+			"titulo": "Granblue Fantasy the Animation",
+			"imagem": "https://2.bp.blogspot.com/-IIlMfxVZxrs/XN2Va0BiR-I/AAAAAAAAOI8/PgCGq0Gogz4D5RMYPEtcLDBvMDJFksThwCLcBGAs/s1600/Granblue-Fantasy-the-Animation.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "D59DCF7D",
+			"titulo": "Haikyuu!!",
+			"imagem": "https://3.bp.blogspot.com/-081S3sV3Kqc/XN2aFMWyDRI/AAAAAAAAOJg/qsndzHTK2t0Og9SW8FtGDYmPYQktiiYpQCLcBGAs/s1600/Haikyuu.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "CA56E8BF",
+			"titulo": "Haikyuu!! 2nd",
+			"imagem": "https://3.bp.blogspot.com/-yXkwAg1tP2Y/XN2aD02TpqI/AAAAAAAAOJY/udGxesp8GwIEK6-W6L66YbE-jXfAfVlfACLcBGAs/s1600/Haikyuu-2nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "8B01D132",
+			"titulo": "Haikyuu!! 3nd",
+			"imagem": "https://1.bp.blogspot.com/-ea9YkQ8v4J0/XN2aEhF6lNI/AAAAAAAAOJc/rUIk_nzVg0sP02cUntAL4sNRKC8EZg9rQCLcBGAs/s1600/Haikyuu-3nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "01DB7EA5",
+			"titulo": "Hashiri Tsuzukete Yokattatte.",
+			"imagem": "https://1.bp.blogspot.com/-k-khbk8XaBw/W9NofdVYRtI/AAAAAAAANT0/iT--oYVKh6YwKBE4hZTZZCNVwUVzcZ1twCLcBGAs/s1600/Hashiri-Tsuzukete-Yokattatte.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "A3A2CD33",
+			"titulo": "Highschool of the Dead",
+			"imagem": "https://2.bp.blogspot.com/-95ngDvafpSk/XN3zjjTtVGI/AAAAAAAAOJ0/bmyZHZaFTOMKMhTJ5Dk68xxRStO5fUhuwCLcBGAs/s1600/Highschool-of-the-Dead.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "0D6584B1",
+			"titulo": "Isekai Quartet",
+			"imagem": "https://3.bp.blogspot.com/-QHizfwPBM6I/XOB_cNULVtI/AAAAAAAAOPE/qcO4HHGSLjsvBjebMMrc7RLpql_E7znjACLcBGAs/s1600/Isekai-Quartet.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "F20BBC76",
+			"titulo": "K",
+			"imagem": "https://2.bp.blogspot.com/-kE-ObvZARUA/XN31Z5ZkRbI/AAAAAAAAOKA/vSr3JFYPou0T1MkpYN6pzx0fTO7eKuOlwCLcBGAs/s1600/K.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "0427E1C4",
+			"titulo": "K: Return of Kings",
+			"imagem": "https://2.bp.blogspot.com/-ssVHagXWrI0/XN31a8k8DFI/AAAAAAAAOKE/SGWlIz9ns5E4yrvx0Lzx3UaF4nBR9d9VgCLcBGAs/s1600/K-Return-Of-Kings.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},	
+		{
+			"id": "58B91A72",
+			"titulo": "Kimi no Iru Machi",
+			"imagem": "https://1.bp.blogspot.com/-OlGXFIlZebQ/XN34kubfrUI/AAAAAAAAOKU/SldZ3rFAAX49x9EK68tgYbZlg1bm4DyYwCLcBGAs/s1600/Kimi-no-Iru-Machi.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "1B6E04CF",
+			"titulo": "Kono Subarashii Sekai ni Shukufuku wo!",
+			"imagem": "https://2.bp.blogspot.com/-HNwXMlk36v0/XN37qSrvBzI/AAAAAAAAOK0/VC9FBKiFcEAzMWriuJs7-Rb6pjCrRsUagCLcBGAs/s1600/Kono-Subarashii-Sekai-ni-Shukufuku-wo.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "91432F37",
+			"titulo": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+			"imagem": "https://1.bp.blogspot.com/-xk_DhGZIGR4/XN36DHaKmEI/AAAAAAAAOKg/7XsbVhGlGgI5N9zWJeM35y5eMxWuLarwwCLcBGAs/s1600/Kono-Subarashii-Sekai-ni-Shukufuku-wo-2.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "4DC9CB33",
+			"titulo": "Koutetsujou no Kabaneri",
+			"imagem": "https://3.bp.blogspot.com/-AUkMsGVusvk/XN8d3t-TCGI/AAAAAAAAOLM/L9slj8Y_nvEH4WHkLdJW5WNTzTb85Ou-gCLcBGAs/s1600/Koutetsujou-no-Kabaneri.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "EE72BA61",
+			"titulo": "Kuroko no Basket",
+			"imagem": "https://4.bp.blogspot.com/-kbkNHr2J4CI/XN8i8AI9KyI/AAAAAAAAOLg/5D1bnr3weRcbw_tDMlYVHf0AQT570rceQCLcBGAs/s1600/Kuroko-no-Basket.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "D17233D5",
+			"titulo": "Kuroko no Basket 2nd",
+			"imagem": "https://4.bp.blogspot.com/-OaS7PjTHURc/XN8i7PDeA8I/AAAAAAAAOLY/pfiF6L1a7Z49eGaHZQA26lEtk_CaWByvwCLcBGAs/s1600/Kuroko-no-Basket-2nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "1A965B5A",
+			"titulo": "Kuroko no Basket 3nd",
+			"imagem": "https://2.bp.blogspot.com/-zfn8RZrw1Fg/XN8i7l-rpeI/AAAAAAAAOLc/2C_dqLSm3GYuRZINUmA88laDaaBxea9lACLcBGAs/s1600/Kuroko-no-Basket-3nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "1F0E7717",
+			"titulo": "Mahou Sensou",
+			"imagem": "https://4.bp.blogspot.com/-qskkFMgkbas/XOBQPgwHZRI/AAAAAAAAOMI/N6nYxydh3FcYdOOy1Y-Z_XRj9crIIZoAwCLcBGAs/s1600/Mahou-Sensou.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "FF3D3B02",
+			"titulo": "Mahouka Koukou no Rettousei",
+			"imagem": "https://3.bp.blogspot.com/-C_Ql7zQyFCc/XOBSk_31taI/AAAAAAAAOMU/lCFyvopFFJUAyQQTWMX9DjlL44PcfLxWgCLcBGAs/s1600/Mahouka-Koukou-no-Rettousei.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "12342B3F",
+			"titulo": "Mahoutsukai no Yome",
+			"imagem": "https://4.bp.blogspot.com/-d_aCIXzqrm4/XOBT4VMZOZI/AAAAAAAAOMc/POl2s8QNi0E9jCrIr7WLxEJjwAaYLbypwCLcBGAs/s1600/Mahoutsukai-no-Yome.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "46C49A1C",
+			"titulo": "Masamune-kun no Revenge",
+			"imagem": "https://2.bp.blogspot.com/-pDVwi7245SM/XOBV_fdNtII/AAAAAAAAOMo/w8m3OGaXbSMhh7MX1E_Z1KyaizjUJqHUgCLcBGAs/s1600/Masamune-kun-no-Revenge.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "8BCD4160",
+			"titulo": "Musaigen no Phantom World",
+			"imagem": "https://3.bp.blogspot.com/-n_z35J0ne-E/XOBXSl1omSI/AAAAAAAAOMw/29ySWEScwO8YVMn35U8-aFLjrYYM20jsACLcBGAs/s1600/Musaigen-no-Phantom-World.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "E0CA8B6B",
+			"titulo": "Netoge no Yome wa Onnanoko ja Nai to Omotta",
+			"imagem": "https://1.bp.blogspot.com/-Mu8PtxYPOg8/XOBZG7R2GvI/AAAAAAAAOM8/j6vtjXZuVRU2mKu1jO65kiCVeTMbm5-ZACLcBGAs/s1600/Netoge-no-Yome-wa-Onnanoko-ja-Nai-to-Omotta.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "53D63C9E",
+			"titulo": "No Game No Life",
+			"imagem": "https://2.bp.blogspot.com/--B0bdjMgwCw/XOBcuZwfG6I/AAAAAAAAONI/xiJFexYqcgcFtn9sJLwjdvvpOErdUOSMwCLcBGAs/s1600/No-Game-No-Life.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "AFD96D8F",
+			"titulo": "Noragami Aragoto",
+			"imagem": "https://4.bp.blogspot.com/-innm1Cmq8ag/XOBeikmEJiI/AAAAAAAAONU/hskE46s0SJIqfEpJWJs150GGc5Y6gNvkwCLcBGAs/s1600/Noragami-Aragoto.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "634B8505",
+			"titulo": "Orange",
+			"imagem": "https://2.bp.blogspot.com/-Vfnemsc2ZN8/XOGKFkiKipI/AAAAAAAAOQs/txUtSSA6Tkg-G-9tNS8cVx-JLWaGWO0XQCLcBGAs/s1600/Orange.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "3CEF3194",
+			"titulo": "Overlord",
+			"imagem": "https://3.bp.blogspot.com/-cqEMXAx1Ydo/XOGLqO_EnUI/AAAAAAAAOQ8/dN9V0p9N9tstULAov4QW9rzfX2Soj_VPQCLcBGAs/s1600/Overlord.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "6DBFBC23",
+			"titulo": "Overlord II",
+			"imagem": "https://1.bp.blogspot.com/-LMHIUQJbXPQ/XOGLpfpnx4I/AAAAAAAAOQ4/WFuPUEweXsEiOFkit1MvYJVBa35HynGVQCLcBGAs/s1600/Overlord-II.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "3DB1942D",
+			"titulo": "Overlord III",
+			"imagem": "https://3.bp.blogspot.com/-u64UZOf9qfI/XOGLqQyxyRI/AAAAAAAAORA/wXUPfTgxMr0oPMdkNVI1IXM6M344CpjvgCLcBGAs/s1600/Overlord-III.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "443330A3",
+			"titulo": "Owari no Seraph",
+			"imagem": "https://2.bp.blogspot.com/-M2QY5X_BOsY/XOHgD74CmPI/AAAAAAAAORU/UfJ6oJtDSIY4SqIL9EJIgTXmikwnQ1kbgCLcBGAs/s1600/Owari-no-Seraph.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "1E2B837C",
+			"titulo": "Owari no Seraph Nagoya Kessen-hen",
+			"imagem": "https://2.bp.blogspot.com/-AkiF2cFxAC4/XOHgEDWZrEI/AAAAAAAAORY/onfdi6h83Dob4Eb01VKknOxElo-0Fp6iQCLcBGAs/s1600/Owari-no-Seraph-Nagoya-Kessen-hen.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "49E5B465",
+			"titulo": "Persona 5 the Animation",
+			"imagem": "https://2.bp.blogspot.com/-auSfmo_UbZ8/XOm8luRHJLI/AAAAAAAAOWY/9A0ivO5PuIkV5z8tI70FmEYBHgBeEl0-ACLcBGAs/s1600/persona-5-the-animation.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "F722EBBC",
+			"titulo": "Planetarian: Chiisana Hoshi no Yume",
+			"imagem": "https://1.bp.blogspot.com/-kJfWz0OAOXM/XOHiLJwK4cI/AAAAAAAAORo/pvgqsEDXk1AB1v-R3n-HVZxc-1CZh4AEwCLcBGAs/s1600/Planetarian-Chiisana-Hoshi-no-Yume.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "6E6A8481",
+			"titulo": "Rakudai Kishi no Cavalry",
+			"imagem": "https://3.bp.blogspot.com/-mNrEDHzozLs/XOHjtlNs-RI/AAAAAAAAOR0/dK5edNdKLX4wb5ucyqh_YxlaDcS-uMEUACLcBGAs/s1600/Rakudai-Kishi-no-Cavalry.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "B47A74C2",
+			"titulo": "Re:Zero kara Hajimeru Isekai Seikatsu",
+			"imagem": "https://1.bp.blogspot.com/-ShGXwFD4meU/XOHjuDWKMFI/AAAAAAAAOR4/EW82bEyu2dY7PSjCj6oUi2xBplDstX27wCLcBGAs/s1600/Re-Zero-Kara-Hajimeru-Isekai-Seikatsu.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "F3154C79",
+			"titulo": "Ryuuou no Oshigoto!",
+			"imagem": "https://1.bp.blogspot.com/-izLd5kUF7Ik/XOMfr4FJSgI/AAAAAAAAOSU/Iu6XAJoyJEwh5vQunUt3ifFt7FLfK0YyQCLcBGAs/s1600/Ryuuou-no-Oshigoto.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "4BC8A5FD",
+			"titulo": "Saikin Imouto no Yousu ga Chotto Okashiind ga",
+			"imagem": "https://4.bp.blogspot.com/-SSyyw73tkBg/XOMhI1mxWxI/AAAAAAAAOSg/IGhwzWdfUFo_vuc9uyG7o3GfKDqkA4CowCLcBGAs/s1600/Saikin-Imouto.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "1C91F2C7",
+			"titulo": "Sakurako-san no Ashimoto ni wa Shitai ga Umatteiru",
+			"imagem": "https://1.bp.blogspot.com/-tG1h2qfBsUY/XOMjlBsb4fI/AAAAAAAAOSs/9AuVVj4aK0Mo6QGq4gjoX-OMfyw08Q1uwCLcBGAs/s1600/sakurako-san-no-ashimoto.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "80F3E6BE",
+			"titulo": "Seiken no Blacksmith",
+			"imagem": "https://3.bp.blogspot.com/-zEiMnWsUlvg/XOcmWUz972I/AAAAAAAAOTE/S0hng4FSDLwH1gXRAE4ywhrQZdd6wlRKACLcBGAs/s1600/Seiken-no-Blacksmith.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "8C397810",
+			"titulo": "Seikoku no Dragonar",
+			"imagem": "https://1.bp.blogspot.com/-H0FlOKj0Mag/XOcmYFRtmwI/AAAAAAAAOTI/Y3k4Gbd0Qg0XgTQ2b1ywGycm-Rt3TlXqQCLcBGAs/s1600/Seikoku-no-Dragonar.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "1CC4B748",
+			"titulo": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume",
+			"imagem": "https://3.bp.blogspot.com/-Bzku_mnXDlo/W9s-eRoZqQI/AAAAAAAANXE/9okrJkFPUtg85bW5e5xKnpu_vrquGxsuACLcBGAs/s1600/Seishun-Buta-Yarou-wa-Bunny-Girl-Senpai-no-Yume-wo-Minai.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "BCCFA82C",
+			"titulo": "Shigatsu wa Kimi no Uso",
+			"imagem": "https://2.bp.blogspot.com/-AWmQuWe-9Vs/XOcrZg97pEI/AAAAAAAAOTY/4cZICvG4304d7n_U_cDsku_TAH1q722ZgCLcBGAs/s1600/Shigatsu-wa-Kimi-no-Uso.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "2D4B74C1",
+			"titulo": "Shingeki no Kyojin",
+			"imagem": "https://3.bp.blogspot.com/-4Qb2-PtAygI/XOcsvgWW-zI/AAAAAAAAOTk/SbRte1s_RZA8GcSXRdM7H7RA-gMfkF8BwCLcBGAs/s1600/shingeki-no-kyojin.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "149DFFB9",
+			"titulo": "Shingeki no Kyojin 2nd",
+			"imagem": "https://3.bp.blogspot.com/-uOryItQ6W9E/XOcswBpxLJI/AAAAAAAAOTo/PsnjuUcDkjYjv0FK6w_fcQLYkh6jaBFgQCLcBGAs/s1600/shingeki-no%2Bkyojin-2nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "7122CC1D",
+			"titulo": "Shuumatsu Nani Shitemasu ka Isogashii desu ka Sukutte Moratte Ii desu ka",
+			"imagem": "https://2.bp.blogspot.com/-wij7QeOIcIk/XOcwPRsBEsI/AAAAAAAAOT4/vOasY4FH6EQ4V27iuavmvakhIY0FV6R8gCLcBGAs/s1600/SukaSuka.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "3F9831F7",
+			"titulo": "Sidonia no Kishi",
+			"imagem": "https://4.bp.blogspot.com/-KErEG_9yt34/XOiX6Ze_ZFI/AAAAAAAAOV0/MJKogbRdj_k4SH_qzQl_dkqIYElUnFXtQCLcBGAs/s1600/Sidonia-no-Kishi.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "5DFFFBE9",
+			"titulo": "Sword Art Online",
+			"imagem": "https://1.bp.blogspot.com/-6B_ppyBuzXw/XOcyIzgCXhI/AAAAAAAAOUI/oAXS3ZTDoZgLKn2VIylj39xXcxGtR5YFwCLcBGAs/s1600/Sword-Art-Online.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "AC4F1700",
+			"titulo": "Sword Art Online II",
+			"imagem": "https://3.bp.blogspot.com/-_g1_hgH5Ajs/XOcyIF0-PBI/AAAAAAAAOUE/k150HJhA5rAO3bpdXdcBGmXptuvGipL-wCLcBGAs/s1600/Sword-Art-Online-II.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "A4F491EA",
+			"titulo": "Sword Art Online Alicization",
+			"imagem": "https://1.bp.blogspot.com/-dMtRvQd1OTg/XOm-fr1hcVI/AAAAAAAAOWk/eZhyEvphHdks3N2RllUkuyOMVFTtVnYJwCLcBGAs/s1600/Sword-Art-Online-Alicization.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "C28329E7",
+			"titulo": "Tales of Zestiria the X",
+			"imagem": "https://1.bp.blogspot.com/-34g75uwWxPM/XOiLA19MuOI/AAAAAAAAOUs/jEP00tWs1eA3nT-2tAexCraXrZ3zVH67gCLcBGAs/s1600/Tales-of-Zestiria-the-X.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "1D2EC446",
+			"titulo": "Tales of Zestiria the X 2nd",
+			"imagem": "https://3.bp.blogspot.com/-jWi4esJiKRo/XOiK6-4uKQI/AAAAAAAAOUo/n8ejKsdV_W8EkaZ__Db3Tnf7lIlyy-_dACLcBGAs/s1600/Tales-of-Zestiria-the-X-2nd.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "D0BE81B5",
+			"titulo": "Tate no Yuusha no Nariagari",
+			"imagem": "https://2.bp.blogspot.com/-Np1lWQ-509U/XOm_Rab8akI/AAAAAAAAOWs/-N89XSolXDQtzPdfyMiGIVNHw5iErG4vQCLcBGAs/s1600/Tate-no-Yuusha-no-Nariagari.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "E791CE6C",
+			"titulo": "Tensei shitara Slime Datta Ken",
+			"imagem": "https://2.bp.blogspot.com/-c_ccJoISyT4/W9dlmcUPc7I/AAAAAAAANVg/hE2wjHL5pC8dz3RJEm-gec7ZbEm1IiIBQCLcBGAs/s1600/Tensei-shitara-Slime-Datta-Ken.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "B8488D92",
+			"titulo": "Toaru Hikuushi e no Koiuta",
+			"imagem": "https://2.bp.blogspot.com/-gvF8LgjxPis/XOiQqlIs07I/AAAAAAAAOVA/xbHAmXO2jVMXtSkyMCtQovoRoHaINRk_wCLcBGAs/s1600/Toaru-Hikuushi-e-no-Koiuta.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "E0DE8155",
+			"titulo": "Utawarerumono: Itsuwari no Kamen",
+			"imagem": "https://3.bp.blogspot.com/-k1qJsrdeNxA/XOiSUHuCM7I/AAAAAAAAOVM/df0uUjn5UPE4tJHU-nvCWvIoY11gQWwRwCLcBGAs/s1600/Utawarerumono-Itsuwari-no-Kamen.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-zFXMtxm6a_8/Vz_MZn_3SFI/AAAAAAAAJpw/eTdlsMpdZ3UAY1z5dc_NK9TcfCp5a4azgCLcB/s1600/HD-TV.png"
+		},
+		{
+			"id": "232D4B72",
+			"titulo": "Violet Evergarden",
+			"imagem": "https://2.bp.blogspot.com/-zRUYq2nxko4/XOiTb8GMdWI/AAAAAAAAOVU/ZLq4Xtd5VokZ3nZZz396YWccPf-UrHtDQCLcBGAs/s1600/Violet-Evergarden.jpg",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "F25E6396",
+			"titulo": "Wotaku ni Koi wa Muzukashii",
+			"imagem": "Imagem",
+			"imagem2": "https://2.bp.blogspot.com/-I3dp_db44qU/XMs_9X30HBI/AAAAAAAAODM/ktZmzDVocnApl-XU6uHEKGGLLOLsAhx_QCLcBGAs/s1600/Blu-Ray.png"
+		},
+		{
+			"id": "8ADC7A93",
+			"titulo": "Yoake mae yori ruri iro na: Crescent love",
+			"imagem": "https://2.bp.blogspot.com/-LcXRB82hTGQ/XOiVceIWGaI/AAAAAAAAOVo/NuVT8Pi05tojXOi6DDJwUjGunZQtA7hugCLcBGAs/s1600/Yoake-Mae-Yori-Ruriiro-na-Crescent-Love.jpg",
+			"imagem2": "https://3.bp.blogspot.com/-qQzrDklRf70/XMs_9ShVIiI/AAAAAAAAODI/0nkBr-Fn_MItXR_pqjvbTGNOFspupVQDQCLcBGAs/s1600/DVD.png"
+		}
 	]
 }
