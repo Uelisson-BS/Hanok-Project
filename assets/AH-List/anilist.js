@@ -57,7 +57,7 @@ dataPanel.addEventListener('click',(event)=>{if(event.target.matches('.btn-show-
 searchBtn.addEventListener('click',event=>{let results=[]
 event.preventDefault()
 const regex=new RegExp(searchInput.value,'i')
-results=data.filter(movie=>movie.title.match(regex))
+results=data.filter(movie=>movie.titulo.match(regex))
 console.log(results)
 getTotalPages(results)
 getPageData(1,results)})
