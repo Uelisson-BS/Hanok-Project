@@ -163,7 +163,7 @@ console.log(arr); // ['a', 'b', 'c'
     event.preventDefault()
     const regex = new RegExp(searchInput.value, 'i')
 
-    results = data.filter(movie => movie.title.match(regex))
+    results = data.filter(movie => movie.titulo.match(regex))
     console.log(results)
     getTotalPages(results)
     getPageData(1, results)
