@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-	jQuery(".toggle-box").hide(); 
+	jQuery(".toggle-box2").hide(); 
 	
 	jQuery(".toggle").toggle(function(){
 		jQuery(this).addClass("toggle-active");
