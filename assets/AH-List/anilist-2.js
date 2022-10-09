@@ -25,7 +25,6 @@ const modalImagem=document.getElementById('show-movie-image')
 const modalDate=document.getElementById('show-movie-date')
 const modalCategory=document.getElementById('show-movie-category')
 const modalGenero=document.getElementById('show-movie-genero')
-const modalQuality=document.getElementById('show-movie-quality')
 const modalPage=document.getElementById('show-movie-page')
 const modalDescription=document.getElementById('show-movie-description')
 const url=INDEX_URL2+id+'.json'
@@ -37,7 +36,6 @@ modalImagem.innerHTML=`<img src="${POSTER_URL}${data.imagem}" class="img-fluid" 
 modalDate.textContent=`${data.ano}`
 modalCategory.textContent=`${data.category}`
 modalGenero.textContent=`${data.genero}`
-modalQuality.textContent=`${data.quality}`
 modalPage.innerHTML=`${data.page}`
 modalDescription.textContent=`${data.sinopse}`})}
 function getTotalPages(data){let totalPages=Math.ceil(data.length/ITEM_PER_PAGE)||1
