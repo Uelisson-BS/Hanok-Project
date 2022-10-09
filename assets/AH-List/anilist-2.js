@@ -25,7 +25,6 @@ const modalImagem=document.getElementById('show-movie-image')
 const modalDate=document.getElementById('show-movie-date')
 const modalCategory=document.getElementById('show-movie-category')
 const modalGenero=document.getElementById('show-movie-genero')
-const modalFansub=document.getElementById('show-movie-fansub')
 const modalQuality=document.getElementById('show-movie-quality')
 const modalPage=document.getElementById('show-movie-page')
 const modalDescription=document.getElementById('show-movie-description')
@@ -38,7 +37,6 @@ modalImagem.innerHTML=`<img src="${POSTER_URL}${data.imagem}" class="img-fluid" 
 modalDate.textContent=`${data.ano}`
 modalCategory.textContent=`${data.category}`
 modalGenero.textContent=`${data.genero}`
-modalFansub.textContent=`${data.fansub}`
 modalQuality.textContent=`${data.qualidade}`
 modalPage.innerHTML=`${data.page}`
 modalDescription.textContent=`${data.sinopse}`})}
