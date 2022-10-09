@@ -37,7 +37,7 @@ modalImagem.innerHTML=`<img src="${POSTER_URL}${data.imagem}" class="img-fluid" 
 modalDate.textContent=`${data.ano}`
 modalCategory.textContent=`${data.category}`
 modalGenero.textContent=`${data.genero}`
-modalQuality.textContent=`${data.qualidade}`
+modalQuality.textContent=`${data.quality}`
 modalPage.innerHTML=`${data.page}`
 modalDescription.textContent=`${data.sinopse}`})}
 function getTotalPages(data){let totalPages=Math.ceil(data.length/ITEM_PER_PAGE)||1
