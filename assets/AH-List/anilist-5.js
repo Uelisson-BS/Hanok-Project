@@ -17,8 +17,8 @@ console.log(data)
 getTotalPages(data)
 getPageData(1,data)}).catch((err)=>console.log(err))
 function displayDataList(data){let htmlContent=''
-if(isListModel===false){data.forEach(function(item,index){htmlContent+=`
-<div class="col-sm-3"><div class="card mb-2 size"><img class="card-img-top" src="${POSTER_URL}${item.imagem}" alt="Card image cap"><img class="lith" src="${POSTER_URL}${item.imagem2}"><div class="card-body movie-item-body "><h6 class="card-title">${item.titulo}</h5></div><div class="card-footer"><button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informações</button></div></div></div>`})}else if(isListModel===true){data.forEach(function(item,index){htmlContent+=`<div class="container"><div class="row size"><div class="col-9"><h5>${item.titulo}</h5></div><div class="col-3 card-footer"><button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button></div></div></div>`})}
+if(isListModel===!1){data.forEach(function(item,index){htmlContent+=`
+<div class="col-sm-3"><div class="card mb-2 size"><img class="card-img-top" src="${POSTER_URL}${item.imagem}" alt="Card image cap"><img class="lith" src="${POSTER_URL}${item.imagem2}"><div class="card-body movie-item-body "><h6 class="card-title">${item.titulo}</h5></div><div class="card-footer"><button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informações</button></div></div></div>`})}else if(isListModel===!0){data.forEach(function(item,index){htmlContent+=`<div class="container"><div class="row size"><div class="col-9"><h5>${item.titulo}</h5></div><div class="col-3 card-footer"><button class="btn btn-info btn-show-movie" data-toggle="modal" data-target="#show-movie-modal" data-id="${item.id}">Mais Informação</button></div></div></div>`})}
 dataPanel.innerHTML=htmlContent}
 function showMovie(id){const modalTitle=document.getElementById('show-movie-title')
 const modalImagem=document.getElementById('show-movie-image')
